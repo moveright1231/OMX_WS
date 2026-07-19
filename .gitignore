@@ -17,3 +17,5 @@ src/pymoveit2/
 
 # etc
 .DS_Store
+
+CLAUDE.md
