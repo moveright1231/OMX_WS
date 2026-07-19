@@ -29,8 +29,11 @@ from rclpy.executors import MultiThreadedExecutor, SingleThreadedExecutor
 from rclpy.node import Node
 from rclpy.parameter import Parameter
 from control_msgs.action import GripperCommand
+from geometry_msgs.msg import PoseStamped
 from pymoveit2 import MoveIt2
+from rclpy.qos import QoSProfile, DurabilityPolicy
 from sensor_msgs.msg import Image
+from visualization_msgs.msg import Marker
 
 from pick_place_demo import GRIPPER_OPEN, JOINTS, cube_sdf, ik
 from vision_env import IMAGE_TOPIC, LOOK_POSE
@@ -78,6 +81,17 @@ class VisionPick:
         # 메인 executor 스레드를 점유해 이미지 콜백이 얼어붙는 문제 방지
         self.cam_node = Node('vision_pick_cam')
         self.cam_node.create_subscription(Image, IMAGE_TOPIC, self.image_cb, 5)
+        # 큐브 실제 pose → Foxglove용 /cube_marker 중계 (콜백은 격리된 cam_node에)
+        qos = QoSProfile(depth=1, durability=DurabilityPolicy.TRANSIENT_LOCAL)
+        self.cube_marker_pub = self.cam_node.create_publisher(Marker, '/cube_marker', qos)
+        self.cam_node.create_subscription(
+            PoseStamped, '/model/pick_cube/pose', self.cube_pose_cb, 10)
+        self.pose_bridge = subprocess.Popen(
+            ['ros2', 'run', 'ros_gz_bridge', 'parameter_bridge',
+             '/model/pick_cube/pose@geometry_msgs/msg/PoseStamped[gz.msgs.Pose'],
+            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+            start_new_session=True)
+
         cam_exec = SingleThreadedExecutor()
         cam_exec.add_node(self.cam_node)
 
@@ -100,6 +114,17 @@ class VisionPick:
         self.frame = self.bridge.imgmsg_to_cv2(msg, 'bgr8')
         self.frame_wall = time.time()
         self.frame_seq = getattr(self, 'frame_seq', 0) + 1
+
+    def cube_pose_cb(self, msg):
+        """큐브 실제 pose를 Foxglove용 마커로 중계"""
+        m = Marker()
+        m.header.frame_id = 'world'
+        m.ns, m.id = 'cube', 0
+        m.type, m.action = Marker.CUBE, Marker.ADD
+        m.pose = msg.pose
+        m.scale.x = m.scale.y = m.scale.z = self.args.cube_size
+        m.color.r, m.color.g, m.color.b, m.color.a = 0.1, 0.4, 1.0, 1.0
+        self.cube_marker_pub.publish(m)
 
     def check_frames_alive(self):
         if time.time() - getattr(self, 'frame_wall', 0) > 3.0:
@@ -281,9 +306,18 @@ def parse_args():
 def main():
     args = parse_args()
     rclpy.init()
+    demo = None
     try:
-        VisionPick(args).run()
+        demo = VisionPick(args)
+        demo.run()
     finally:
+        if demo is not None and demo.pose_bridge:
+            import os
+            import signal
+            try:
+                os.killpg(os.getpgid(demo.pose_bridge.pid), signal.SIGTERM)
+            except ProcessLookupError:
+                pass
         rclpy.shutdown()
 
 

@@ -15,6 +15,12 @@ import os
 import subprocess
 import time
 
+import rclpy
+from rclpy.node import Node as RclpyNode
+from rclpy.qos import QoSProfile, DurabilityPolicy
+from geometry_msgs.msg import Point
+from visualization_msgs.msg import Marker, MarkerArray
+
 WS = os.path.dirname(os.path.abspath(__file__))
 
 # vision_calibrate.py / vision_pick.py와 공유하는 상수
@@ -109,6 +115,46 @@ def spawn(sdf, name, x, y, z, pitch=0.0):
     return result
 
 
+def make_marker(mid, mtype, pos, scale, rgba):
+    m = Marker()
+    m.header.frame_id = 'world'
+    m.ns, m.id = 'vision_env', mid
+    m.type, m.action = mtype, Marker.ADD
+    m.pose.position.x, m.pose.position.y, m.pose.position.z = pos
+    m.pose.orientation.w = 1.0
+    m.scale.x, m.scale.y, m.scale.z = scale
+    m.color.r, m.color.g, m.color.b, m.color.a = rgba
+    return m
+
+
+def publish_scene_markers(node):
+    """Foxglove 3D 패널용 마커 — Gazebo 엔티티는 ROS 토픽이 아니라서 따로 발행해야 보임"""
+    qos = QoSProfile(depth=1, durability=DurabilityPolicy.TRANSIENT_LOCAL)
+    pub = node.create_publisher(MarkerArray, '/vision_env_markers', qos)
+    arr = MarkerArray()
+    cx, cy = BOARD_CENTER
+    # 흰 바탕판
+    arr.markers.append(make_marker(
+        0, Marker.CUBE, (cx, cy, 0.001), (0.32, 0.26, 0.002), (1.0, 1.0, 1.0, 1.0)))
+    # 검은 칸들 (CUBE_LIST 하나로)
+    squares = make_marker(
+        1, Marker.CUBE_LIST, (cx, cy, 0.0025), (SQUARE, SQUARE, 0.001), (0.0, 0.0, 0.0, 1.0))
+    for r in range(7):
+        for c in range(9):
+            if (r + c) % 2 == 0:
+                squares.points.append(Point(x=(c - 4) * SQUARE, y=(r - 3) * SQUARE, z=0.0))
+    arr.markers.append(squares)
+    # 빨간 기준 마커
+    arr.markers.append(make_marker(
+        2, Marker.CUBE, (RED_MARKER[0], RED_MARKER[1], 0.002), (0.02, 0.02, 0.002),
+        (1.0, 0.1, 0.1, 1.0)))
+    # 카메라 (회색 박스)
+    arr.markers.append(make_marker(
+        3, Marker.CUBE, CAM_POS, (0.06, 0.06, 0.04), (0.4, 0.4, 0.4, 1.0)))
+    pub.publish(arr)
+    return pub
+
+
 def main():
     spawn(CAMERA_SDF, 'overhead_cam', *CAM_POS, pitch=1.5708)  # +x축이 아래를 향함
     spawn(board_sdf(), 'checkerboard', BOARD_CENTER[0], BOARD_CENTER[1], 0.001)
@@ -120,9 +166,28 @@ def main():
         print('경고: gz 토픽에 overhead_camera가 없음 — Sensors 플러그인이 로드된 월드로'
               ' gazebo를 재시작했는지 확인하세요')
 
+    # Foxglove 3D 표시용 마커 (latched — 이 프로세스가 살아있는 동안 유지)
+    rclpy.init()
+    node = RclpyNode('vision_env')
+    marker_pub = publish_scene_markers(node)
+    print('Foxglove 3D 표시: /vision_env_markers 토픽을 켜세요')
+
     print(f'이미지 브릿지 시작: gz {IMAGE_TOPIC} → ROS {IMAGE_TOPIC} (Ctrl+C로 종료)')
-    os.execvp('ros2', ['ros2', 'run', 'ros_gz_bridge', 'parameter_bridge',
-                       f'{IMAGE_TOPIC}@sensor_msgs/msg/Image[gz.msgs.Image'])
+    bridge = subprocess.Popen(
+        ['ros2', 'run', 'ros_gz_bridge', 'parameter_bridge',
+         f'{IMAGE_TOPIC}@sensor_msgs/msg/Image[gz.msgs.Image'],
+        start_new_session=True)
+    try:
+        rclpy.spin(node)  # latched 마커 유지
+    except KeyboardInterrupt:
+        pass
+    finally:
+        import signal
+        try:
+            os.killpg(os.getpgid(bridge.pid), signal.SIGTERM)
+        except ProcessLookupError:
+            pass
+        rclpy.shutdown()
 
 
 if __name__ == '__main__':
