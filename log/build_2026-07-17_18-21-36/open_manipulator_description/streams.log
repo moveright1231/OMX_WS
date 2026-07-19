@@ -1,0 +1,136 @@
+[0.034s] Invoking command in '/home/moveright/omx_ws/build/open_manipulator_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake /home/moveright/omx_ws/src/open_manipulator/open_manipulator_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/open_manipulator_description
+[0.208s] -- The C compiler identification is GNU 11.5.0
+[0.281s] -- The CXX compiler identification is GNU 11.5.0
+[0.309s] -- Detecting C compiler ABI info
+[0.450s] -- Detecting C compiler ABI info - done
+[0.461s] -- Check for working C compiler: /bin/cc - skipped
+[0.462s] -- Detecting C compile features
+[0.462s] -- Detecting C compile features - done
+[0.477s] -- Detecting CXX compiler ABI info
+[0.644s] -- Detecting CXX compiler ABI info - done
+[0.650s] -- Check for working CXX compiler: /bin/c++ - skipped
+[0.650s] -- Detecting CXX compile features
+[0.655s] -- Detecting CXX compile features - done
+[0.656s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.855s] -- Found Python3: /bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.930s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.115s] -- Configuring done (1.0s)
+[1.135s] -- Generating done (0.0s)
+[1.138s] -- Build files have been written to: /home/moveright/omx_ws/build/open_manipulator_description
+[1.147s] Invoked command in '/home/moveright/omx_ws/build/open_manipulator_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake /home/moveright/omx_ws/src/open_manipulator/open_manipulator_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/open_manipulator_description
+[1.147s] Invoking command in '/home/moveright/omx_ws/build/open_manipulator_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --build /home/moveright/omx_ws/build/open_manipulator_description -- -j8 -l8
+[3.179s] Invoked command in '/home/moveright/omx_ws/build/open_manipulator_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --build /home/moveright/omx_ws/build/open_manipulator_description -- -j8 -l8
+[3.215s] Invoking command in '/home/moveright/omx_ws/build/open_manipulator_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --install /home/moveright/omx_ws/build/open_manipulator_description
+[3.861s] -- Install configuration: "Release"
+[3.861s] -- Execute custom install script
+[3.862s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/launch/omx_f.launch.py
+[3.862s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/launch/omx_l.launch.py
+[3.862s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/launch/omy_3m.launch.py
+[3.862s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/launch/omy_f3m.launch.py
+[3.862s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/launch/omy_l100.launch.py
+[3.862s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/launch/open_manipulator_x.launch.py
+[3.862s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omx_f/follower_01_base.stl
+[3.862s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omx_f/follower_02_base_tilt_Revised.stl
+[3.862s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omx_f/follower_03_middle_verticle.stl
+[3.862s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omx_f/follower_04_middle_horizontal.stl
+[3.862s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omx_f/follower_05_tip.stl
+[3.862s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omx_f/follower_06_pan_Revised.stl
+[3.862s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omx_f/follower_07_gripper_motorized.stl
+[3.863s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omx_f/follower_08_gripper_gear.stl
+[3.863s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omx_l/leader_01_base_roll.stl
+[3.863s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omx_l/leader_02_base_tilt_revised.stl
+[3.863s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omx_l/leader_03_middle_vertical.stl
+[3.863s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omx_l/leader_04_middle_horizontal.stl
+[3.863s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omx_l/leader_05_tip_roll.stl
+[3.863s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omx_l/leader_06_tip_pan_revised.stl
+[3.870s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omx_l/leader_07_tip_grip.stl
+[3.898s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_3m/base_unit.stl
+[3.912s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_3m/link1.stl
+[3.936s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_3m/link2.stl
+[3.960s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_3m/link3.stl
+[3.982s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_3m/link4.stl
+[4.004s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_3m/link5.stl
+[4.027s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_3m/link6.stl
+[4.047s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_f3m/base_unit.stl
+[4.076s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_f3m/flange.stl
+[4.094s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_f3m/link1.stl
+[4.122s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_f3m/link2.stl
+[4.141s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_f3m/link3.stl
+[4.181s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_f3m/link4.stl
+[4.207s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_f3m/link5.stl
+[4.231s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_f3m/link6.stl
+[4.261s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_l100/base_unit.stl
+[4.285s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_l100/link1.stl
+[4.300s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_l100/link2.stl
+[4.341s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_l100/link3.stl
+[4.371s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_l100/link4.stl
+[4.394s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_l100/link5.stl
+[4.415s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_l100/link6.stl
+[4.435s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/omy_l100/link7.stl
+[4.454s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/open_manipulator_x/gripper_left_palm.stl
+[4.472s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/open_manipulator_x/gripper_right_palm.stl
+[4.491s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/open_manipulator_x/link1.stl
+[4.507s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/open_manipulator_x/link2.stl
+[4.526s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/open_manipulator_x/link3.stl
+[4.542s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/open_manipulator_x/link4.stl
+[4.557s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/open_manipulator_x/link5.stl
+[4.573s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/open_manipulator_x/plate.stl
+[4.589s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/rh_p12_rn_a/base.stl
+[4.608s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/rh_p12_rn_a/l1.stl
+[4.626s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/rh_p12_rn_a/l2.stl
+[4.647s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/rh_p12_rn_a/r1.stl
+[4.671s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/meshes/rh_p12_rn_a/r2.stl
+[4.688s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/rviz/open_manipulator.rviz
+[4.707s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/omx_f/omx_f.urdf
+[4.724s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/omx_f/omx_f.urdf.xacro
+[4.748s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/omx_f/omx_f_arm.urdf.xacro
+[4.763s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/omx_l/omx_l.urdf
+[4.783s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/omx_l/omx_l.urdf.xacro
+[4.798s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/omx_l/omx_l_arm.urdf.xacro
+[4.814s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/omy_3m/omy_3m.urdf
+[4.831s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/omy_3m/omy_3m.urdf.xacro
+[4.856s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/omy_3m/omy_3m_arm.urdf.xacro
+[4.877s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/omy_f3m/omy_f3m.urdf
+[4.896s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/omy_f3m/omy_f3m.urdf.xacro
+[4.912s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/omy_f3m/omy_f3m_arm.urdf.xacro
+[4.930s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/omy_f3m/rh_p12_rn_a.urdf.xacro
+[4.955s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/omy_l100/omy_l100.urdf
+[4.973s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/omy_l100/omy_l100.urdf.xacro
+[4.988s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/omy_l100/omy_l100_arm.urdf.xacro
+[5.006s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/open_manipulator_x/open_manipulator_x.urdf
+[5.022s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/open_manipulator_x/open_manipulator_x.urdf.xacro
+[5.040s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/urdf/open_manipulator_x/open_manipulator_x_arm.urdf.xacro
+[5.057s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/gazebo/omx_f.gazebo.xacro
+[5.073s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/gazebo/omx_l.gazebo.xacro
+[5.089s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/gazebo/omy_3m.gazebo.xacro
+[5.105s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/gazebo/omy_f3m.gazebo.xacro
+[5.125s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/gazebo/omy_l100.gazebo.xacro
+[5.138s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/gazebo/open_manipulator_x.gazebo.xacro
+[5.158s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/gazebo/rh_p12_rn_a.gazebo.xacro
+[5.178s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/ros2_control/omx_f.ros2_control.xacro
+[5.195s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/ros2_control/omx_l.ros2_control.xacro
+[5.211s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/ros2_control/omy_3m_end_unit.ros2_control.xacro
+[5.229s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/ros2_control/omy_3m_position.ros2_control.xacro
+[5.243s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/ros2_control/omy_f3m_current.ros2_control.xacro
+[5.257s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/ros2_control/omy_f3m_end_unit.ros2_control.xacro
+[5.274s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/ros2_control/omy_f3m_position.ros2_control.xacro
+[5.293s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/ros2_control/omy_f3m_smooth.ros2_control.xacro
+[5.310s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/ros2_control/omy_l100_current.ros2_control.xacro
+[5.326s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/ros2_control/omy_l100_position.ros2_control.xacro
+[5.341s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/ros2_control/open_manipulator_x_position.ros2_control.xacro
+[5.358s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/ament_index/resource_index/package_run_dependencies/open_manipulator_description
+[5.374s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/ament_index/resource_index/parent_prefix_path/open_manipulator_description
+[5.389s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/environment/ament_prefix_path.sh
+[5.405s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/environment/ament_prefix_path.dsv
+[5.420s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/environment/path.sh
+[5.435s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/environment/path.dsv
+[5.452s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/local_setup.bash
+[5.468s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/local_setup.sh
+[5.484s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/local_setup.zsh
+[5.501s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/local_setup.dsv
+[5.517s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/package.dsv
+[5.534s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/ament_index/resource_index/packages/open_manipulator_description
+[5.559s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/cmake/open_manipulator_descriptionConfig.cmake
+[5.574s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/cmake/open_manipulator_descriptionConfig-version.cmake
+[5.590s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_description/share/open_manipulator_description/package.xml
+[5.609s] Invoked command in '/home/moveright/omx_ws/build/open_manipulator_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --install /home/moveright/omx_ws/build/open_manipulator_description

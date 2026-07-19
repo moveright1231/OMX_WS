@@ -1,0 +1,1 @@
+/home/moveright/omx_ws/build/open_manipulator_collision/ament_cmake_core/open_manipulator_collisionConfig-version.cmake

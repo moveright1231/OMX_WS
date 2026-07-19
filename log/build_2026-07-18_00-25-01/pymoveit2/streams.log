@@ -1,0 +1,35 @@
+[0.017s] Invoking command in '/home/moveright/omx_ws/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake /home/moveright/omx_ws/src/pymoveit2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/pymoveit2
+[0.140s] -- The C compiler identification is GNU 11.5.0
+[0.226s] -- The CXX compiler identification is GNU 11.5.0
+[0.254s] -- Detecting C compiler ABI info
+[0.402s] -- Detecting C compiler ABI info - done
+[0.413s] -- Check for working C compiler: /bin/cc - skipped
+[0.413s] -- Detecting C compile features
+[0.413s] -- Detecting C compile features - done
+[0.426s] -- Detecting CXX compiler ABI info
+[0.566s] -- Detecting CXX compiler ABI info - done
+[0.574s] -- Check for working CXX compiler: /bin/c++ - skipped
+[0.574s] -- Detecting CXX compile features
+[0.575s] -- Detecting CXX compile features - done
+[0.583s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.718s] -- Found Python3: /home/moveright/miniforge3/bin/python3 (found version "3.12.12") found components: Interpreter 
+[0.792s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.905s] Traceback (most recent call last):
+[0.905s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>
+[0.905s]     from catkin_pkg.package import parse_package_string
+[0.905s] ModuleNotFoundError: No module named 'catkin_pkg'
+[0.908s] CMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.908s]   execute_process(/home/moveright/miniforge3/bin/python3
+[0.908s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.908s]   /home/moveright/omx_ws/src/pymoveit2/package.xml
+[0.908s]   /home/moveright/omx_ws/build/pymoveit2/ament_cmake_core/package.cmake)
+[0.908s]   returned error code 1
+[0.908s] Call Stack (most recent call first):
+[0.908s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.909s]   /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:60 (ament_package_xml)
+[0.909s]   /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+[0.909s]   CMakeLists.txt:9 (ament_python_install_package)
+[0.909s] 
+[0.909s] 
+[0.909s] -- Configuring incomplete, errors occurred!
+[0.915s] Invoked command in '/home/moveright/omx_ws/build/pymoveit2' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake /home/moveright/omx_ws/src/pymoveit2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/pymoveit2

@@ -1,0 +1,5 @@
+-I/home/moveright/omx_ws/src/open_manipulator/open_manipulator_gui
+-I/home/moveright/omx_ws/build/open_manipulator_gui
+-o
+/home/moveright/omx_ws/build/open_manipulator_gui/include/omy_f3m_gui/moc_qnode.cpp
+/home/moveright/omx_ws/src/open_manipulator/open_manipulator_gui/include/omy_f3m_gui/qnode.hpp

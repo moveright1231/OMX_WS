@@ -1,0 +1,19 @@
+# ROS2 build artifacts
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# 외부 패키지 (각자 GitHub에서 clone받는 것들)
+src/DynamixelSDK/
+src/dynamixel_hardware_interface/
+src/dynamixel_interfaces/
+src/open_manipulator/
+src/pymoveit2/
+
+# etc
+.DS_Store

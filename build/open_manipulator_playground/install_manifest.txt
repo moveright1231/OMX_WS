@@ -1,0 +1,5 @@
+/home/moveright/omx_ws/install/open_manipulator_playground/lib/open_manipulator_playground/open_manipulator_x_hello_moveit
+/home/moveright/omx_ws/install/open_manipulator_playground/lib/open_manipulator_playground/omy_f3m_hello_moveit
+/home/moveright/omx_ws/install/open_manipulator_playground/lib/open_manipulator_playground/omy_3m_hello_moveit
+/home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/cmake/export_open_manipulator_playgroundExport.cmake
+/home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/cmake/export_open_manipulator_playgroundExport-release.cmake

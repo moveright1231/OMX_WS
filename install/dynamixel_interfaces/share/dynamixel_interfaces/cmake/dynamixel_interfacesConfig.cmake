@@ -1,0 +1,1 @@
+/home/moveright/omx_ws/build/dynamixel_interfaces/ament_cmake_core/dynamixel_interfacesConfig.cmake

@@ -1,0 +1,1 @@
+#pragma message("#include \"gravity_compensation_controller_parameters.hpp\" is deprecated. Use #include <om_gravity_compensation_controller/gravity_compensation_controller_parameters.hpp> instead.")

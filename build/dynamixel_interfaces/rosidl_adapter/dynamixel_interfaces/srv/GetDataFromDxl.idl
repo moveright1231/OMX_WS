@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dynamixel_interfaces/srv/GetDataFromDxl.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module dynamixel_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Goals request")
+    struct GetDataFromDxl_Request {
+      std_msgs::msg::Header header;
+
+      uint8 id;
+
+      string item_name;
+
+      double timeout_sec;
+    };
+    @verbatim (language="comment", text=
+      "Respones")
+    struct GetDataFromDxl_Response {
+      uint32 item_data;
+
+      boolean result;
+    };
+  };
+};

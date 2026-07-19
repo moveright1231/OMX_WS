@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dynamixel_interfaces/srv/RebootDxl.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module dynamixel_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Goals request")
+    struct RebootDxl_Request {
+      std_msgs::msg::Header header;
+    };
+    @verbatim (language="comment", text=
+      "Respones")
+    struct RebootDxl_Response {
+      boolean result;
+    };
+  };
+};

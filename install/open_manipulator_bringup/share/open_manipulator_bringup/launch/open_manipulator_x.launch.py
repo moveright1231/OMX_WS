@@ -1,0 +1,1 @@
+/home/moveright/omx_ws/build/open_manipulator_bringup/launch/open_manipulator_x.launch.py

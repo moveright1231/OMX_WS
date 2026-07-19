@@ -1,0 +1,15 @@
+/home/moveright/omx_ws/install/open_manipulator/share/ament_index/resource_index/package_run_dependencies/open_manipulator
+/home/moveright/omx_ws/install/open_manipulator/share/ament_index/resource_index/parent_prefix_path/open_manipulator
+/home/moveright/omx_ws/install/open_manipulator/share/open_manipulator/environment/ament_prefix_path.sh
+/home/moveright/omx_ws/install/open_manipulator/share/open_manipulator/environment/ament_prefix_path.dsv
+/home/moveright/omx_ws/install/open_manipulator/share/open_manipulator/environment/path.sh
+/home/moveright/omx_ws/install/open_manipulator/share/open_manipulator/environment/path.dsv
+/home/moveright/omx_ws/install/open_manipulator/share/open_manipulator/local_setup.bash
+/home/moveright/omx_ws/install/open_manipulator/share/open_manipulator/local_setup.sh
+/home/moveright/omx_ws/install/open_manipulator/share/open_manipulator/local_setup.zsh
+/home/moveright/omx_ws/install/open_manipulator/share/open_manipulator/local_setup.dsv
+/home/moveright/omx_ws/install/open_manipulator/share/open_manipulator/package.dsv
+/home/moveright/omx_ws/install/open_manipulator/share/ament_index/resource_index/packages/open_manipulator
+/home/moveright/omx_ws/install/open_manipulator/share/open_manipulator/cmake/open_manipulatorConfig.cmake
+/home/moveright/omx_ws/install/open_manipulator/share/open_manipulator/cmake/open_manipulatorConfig-version.cmake
+/home/moveright/omx_ws/install/open_manipulator/share/open_manipulator/package.xml

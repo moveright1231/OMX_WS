@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "dynamixel_interfaces/srv/GetDataFromDxl_Response",
+      "fields": [
+        {
+          "name": "item_data",
+          "type": {
+            "type_id": 7,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "result",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "dynamixel_interfaces/srv/GetDataFromDxl_Response",
+      "hash_string": "RIHS01_c2500433ba3b1519e5e93fa6e9221d8a258f6da6fe05435d88eda5ec7cf2ec0a"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+[0.016s] Invoking command in '/home/moveright/omx_ws/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/moveright/omx_ws/src/pymoveit2 -DPython3_EXECUTABLE=/usr/bin/python3 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/pymoveit2
+[0.119s] -- The C compiler identification is GNU 11.5.0
+[0.202s] -- The CXX compiler identification is GNU 11.5.0
+[0.229s] -- Detecting C compiler ABI info
+[0.408s] -- Detecting C compiler ABI info - done
+[0.421s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.421s] -- Detecting C compile features
+[0.421s] -- Detecting C compile features - done
+[0.434s] -- Detecting CXX compiler ABI info
+[0.595s] -- Detecting CXX compiler ABI info - done
+[0.606s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.606s] -- Detecting CXX compile features
+[0.606s] -- Detecting CXX compile features - done
+[0.614s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.778s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.856s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.155s] -- Configuring done (1.1s)
+[1.170s] -- Generating done (0.0s)
+[1.176s] -- Build files have been written to: /home/moveright/omx_ws/build/pymoveit2
+[1.183s] Invoked command in '/home/moveright/omx_ws/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/moveright/omx_ws/src/pymoveit2 -DPython3_EXECUTABLE=/usr/bin/python3 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/pymoveit2
+[1.184s] Invoking command in '/home/moveright/omx_ws/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/moveright/omx_ws/build/pymoveit2 -- -j8 -l8
+[1.274s] Built target ament_cmake_python_symlink_pymoveit2
+[1.517s] running egg_info
+[1.518s] creating pymoveit2.egg-info
+[1.546s] writing pymoveit2.egg-info/PKG-INFO
+[1.547s] writing dependency_links to pymoveit2.egg-info/dependency_links.txt
+[1.547s] writing top-level names to pymoveit2.egg-info/top_level.txt
+[1.547s] writing manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[1.633s] reading manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[1.634s] writing manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[1.675s] Built target ament_cmake_python_build_pymoveit2_egg
+[1.700s] Invoked command in '/home/moveright/omx_ws/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/moveright/omx_ws/build/pymoveit2 -- -j8 -l8
+[1.724s] Invoking command in '/home/moveright/omx_ws/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/moveright/omx_ws/build/pymoveit2
+[1.742s] -- Install configuration: ""
+[1.743s] -- Execute custom install script
+[1.744s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/share/pymoveit2/environment/pythonpath.sh
+[1.766s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/share/pymoveit2/environment/pythonpath.dsv
+[1.787s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2-4.2.0-py3.12.egg-info/PKG-INFO
+[1.802s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2-4.2.0-py3.12.egg-info/SOURCES.txt
+[1.820s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2-4.2.0-py3.12.egg-info/dependency_links.txt
+[1.836s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2-4.2.0-py3.12.egg-info/top_level.txt
+[1.852s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/__init__.py
+[1.869s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/gripper_command.py
+[1.884s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/gripper_interface.py
+[1.903s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/moveit2.py
+[1.920s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/moveit2_gripper.py
+[1.938s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/moveit2_servo.py
+[1.960s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/__init__.py
+[1.981s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/crane_x7.py
+[1.999s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/kinova.py
+[2.020s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/lbr.py
+[2.038s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/panda.py
+[2.055s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/phantomx_pincher.py
+[2.074s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/ur.py
+[2.091s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/utils.py
+[2.108s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/pymoveit2/ex_allow_collisions.py
+[2.129s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/pymoveit2/ex_clear_planning_scene.py
+[2.146s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/pymoveit2/ex_collision_mesh.py
+[2.163s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/pymoveit2/ex_collision_primitive.py
+[2.181s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/pymoveit2/ex_fk.py
+[2.202s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/pymoveit2/ex_gripper.py
+[2.222s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/pymoveit2/ex_ik.py
+[2.238s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/pymoveit2/ex_joint_goal.py
+[2.259s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/pymoveit2/ex_orientation_path_constraint.py
+[2.280s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/pymoveit2/ex_pose_goal.py
+[2.305s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/lib/pymoveit2/ex_servo.py
+[2.343s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/share/ament_index/resource_index/package_run_dependencies/pymoveit2
+[2.370s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/share/ament_index/resource_index/parent_prefix_path/pymoveit2
+[2.389s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/share/pymoveit2/environment/ament_prefix_path.sh
+[2.410s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/share/pymoveit2/environment/ament_prefix_path.dsv
+[2.431s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/share/pymoveit2/environment/path.sh
+[2.452s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/share/pymoveit2/environment/path.dsv
+[2.474s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/share/pymoveit2/local_setup.bash
+[2.495s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/share/pymoveit2/local_setup.sh
+[2.516s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/share/pymoveit2/local_setup.zsh
+[2.536s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/share/pymoveit2/local_setup.dsv
+[2.554s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/share/pymoveit2/package.dsv
+[2.580s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/share/ament_index/resource_index/packages/pymoveit2
+[2.597s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/share/pymoveit2/cmake/pymoveit2Config.cmake
+[2.616s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/share/pymoveit2/cmake/pymoveit2Config-version.cmake
+[2.635s] -- Symlinking: /home/moveright/omx_ws/install/pymoveit2/share/pymoveit2/package.xml
+[2.765s] Listing '/home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2'...
+[2.765s] Compiling '/home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/__init__.py'...
+[2.765s] Compiling '/home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/gripper_command.py'...
+[2.765s] Compiling '/home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/gripper_interface.py'...
+[2.765s] Compiling '/home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/moveit2.py'...
+[2.766s] Compiling '/home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/moveit2_gripper.py'...
+[2.766s] Compiling '/home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/moveit2_servo.py'...
+[2.766s] Listing '/home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots'...
+[2.766s] Compiling '/home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/__init__.py'...
+[2.766s] Compiling '/home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/crane_x7.py'...
+[2.766s] Compiling '/home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/kinova.py'...
+[2.766s] Compiling '/home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/lbr.py'...
+[2.766s] Compiling '/home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/panda.py'...
+[2.766s] Compiling '/home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/phantomx_pincher.py'...
+[2.766s] Compiling '/home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/ur.py'...
+[2.766s] Compiling '/home/moveright/omx_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/utils.py'...
+[2.781s] Invoked command in '/home/moveright/omx_ws/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/moveright/omx_ws/build/pymoveit2

@@ -1,0 +1,1 @@
+/home/moveright/omx_ws/src/dynamixel_interfaces/msg/DynamixelState.msg

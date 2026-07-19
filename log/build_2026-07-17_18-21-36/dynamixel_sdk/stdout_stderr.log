@@ -1,0 +1,239 @@
+-- The C compiler identification is GNU 11.5.0
+-- The CXX compiler identification is GNU 11.5.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (1.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/moveright/omx_ws/build/dynamixel_sdk
+[  5%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/packet_handler.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_read.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_write.cpp.o[0m
+[ 16%] Built target ament_cmake_python_symlink_dynamixel_easy_sdk
+[ 27%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_read.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol2_packet_handler.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol1_packet_handler.cpp.o[0m
+[ 33%] Built target ament_cmake_python_symlink_dynamixel_sdk
+[ 38%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_write.cpp.o[0m
+running egg_info
+creating dynamixel_easy_sdk.egg-info
+writing dynamixel_easy_sdk.egg-info/PKG-INFO
+writing dependency_links to dynamixel_easy_sdk.egg-info/dependency_links.txt
+writing top-level names to dynamixel_easy_sdk.egg-info/top_level.txt
+writing manifest file 'dynamixel_easy_sdk.egg-info/SOURCES.txt'
+reading manifest file 'dynamixel_easy_sdk.egg-info/SOURCES.txt'
+writing manifest file 'dynamixel_easy_sdk.egg-info/SOURCES.txt'
+[ 38%] Built target ament_cmake_python_build_dynamixel_easy_sdk_egg
+[ 44%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_fast_bulk_read.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_handler.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_fast_sync_read.cpp.o[0m
+running egg_info
+creating dynamixel_sdk.egg-info
+[ 61%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler.cpp.o[0m
+writing dynamixel_sdk.egg-info/PKG-INFO
+writing dependency_links to dynamixel_sdk.egg-info/dependency_links.txt
+writing top-level names to dynamixel_sdk.egg-info/top_level.txt
+writing manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[ 66%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/connector.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/control_table.cpp.o[0m
+reading manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+writing manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[ 77%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/dynamixel_error.cpp.o[0m
+[ 77%] Built target ament_cmake_python_build_dynamixel_sdk_egg
+[ 83%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/group_executor.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/motor.cpp.o[0m
+[ 94%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler_linux.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libdynamixel_sdk.so[0m
+[100%] Built target dynamixel_sdk
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/connector.hpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/control_table.hpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/data_types.hpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/dynamixel_easy_sdk.hpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/dynamixel_error.hpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/group_executor.hpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/motor.hpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_sdk/dynamixel_sdk.h
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_read.h
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_write.h
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_bulk_read.h
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_sync_read.h
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_handler.h
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_read.h
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_write.h
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_sdk/packet_handler.h
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler.h
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_arduino.h
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_linux.h
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_mac.h
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_windows.h
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol1_packet_handler.h
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol2_packet_handler.h
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/2xc430_w250.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/2xl430_w250.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/dynamixel.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h42_20_s300_ra.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h54_100_s500_ra.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h54_200_s500_ra.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m42_10_s260_ra.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m54_40_s250_ra.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m54_60_s250_ra.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_106.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_28.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_64.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph42_020_s300.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph54_100_s500.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph54_200_s500.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm42_010_s260.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm54_040_s250.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm54_060_s250.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/rh_p12_rn.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m181.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m181_fw52.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m288.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m288_fw52.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t181.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t181_fw52.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t288.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t288_fw52.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc430_w150.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc430_w240.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd430_t210.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd430_t350.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd540_t150.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd540_t270.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_v210.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_v350.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_w210.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_w350.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_v150.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_v270.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_w150.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_w270.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl320.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m077.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m077_fw52.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m288.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m288_fw52.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl430_w250.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm430_w210.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm430_w350.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm540_w150.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm540_w270.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw430_t200.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw430_t333.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_h260.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_t140.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_t260.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_a051.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_a099.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_b001.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_m001.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_r051.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_r099.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_a051.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_a099.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_b001.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_m001.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_r051.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_r099.model
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.sh
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.dsv
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.5-py3.12.egg-info/PKG-INFO
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.5-py3.12.egg-info/SOURCES.txt
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.5-py3.12.egg-info/dependency_links.txt
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.5-py3.12.egg-info/top_level.txt
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/__init__.py
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_read.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_read.py
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_write.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_write.py
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_fast_bulk_read.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_fast_sync_read.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_handler.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_read.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_read.py
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_write.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_write.py
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/packet_handler.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/packet_handler.py
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler.py
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_arduino.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_linux.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_mac.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_windows.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol1_packet_handler.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol1_packet_handler.py
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol2_packet_handler.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol2_packet_handler.py
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/robotis_def.py
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.5-py3.12.egg-info/PKG-INFO
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.5-py3.12.egg-info/SOURCES.txt
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.5-py3.12.egg-info/dependency_links.txt
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.5-py3.12.egg-info/top_level.txt
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/__init__.py
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/connector.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/connector.py
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/control_table.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/control_table.py
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/data_types.py
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/dynamixel_error.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/dynamixel_error.py
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/group_executor.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/group_executor.py
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/motor.cpp
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/motor.py
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.sh
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.dsv
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.sh
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.dsv
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.sh
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.dsv
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.bash
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.sh
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.zsh
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.dsv
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/ament_index/resource_index/packages/dynamixel_sdk
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig.cmake
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig-version.cmake
+-- Symlinking: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.xml
+-- Installing: /home/moveright/omx_ws/install/dynamixel_sdk/lib/libdynamixel_sdk.so
+Listing '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk'...
+Compiling '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/__init__.py'...
+Compiling '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_read.py'...
+Compiling '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_write.py'...
+Compiling '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_read.py'...
+Compiling '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_write.py'...
+Compiling '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/packet_handler.py'...
+Compiling '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler.py'...
+Compiling '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol1_packet_handler.py'...
+Compiling '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol2_packet_handler.py'...
+Compiling '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/robotis_def.py'...
+Listing '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk'...
+Compiling '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/__init__.py'...
+Compiling '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/connector.py'...
+Compiling '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/control_table.py'...
+Compiling '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/data_types.py'...
+Compiling '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/dynamixel_error.py'...
+Compiling '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/group_executor.py'...
+Compiling '/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/motor.py'...
+-- Installing: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkExport.cmake
+-- Installing: /home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkExport-release.cmake

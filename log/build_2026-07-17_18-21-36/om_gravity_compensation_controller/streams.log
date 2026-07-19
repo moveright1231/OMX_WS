@@ -1,0 +1,92 @@
+[0.034s] Invoking command in '/home/moveright/omx_ws/build/om_gravity_compensation_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake /home/moveright/omx_ws/src/open_manipulator/ros2_controller/om_gravity_compensation_controller -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/om_gravity_compensation_controller
+[0.230s] -- The CXX compiler identification is GNU 11.5.0
+[0.257s] -- Detecting CXX compiler ABI info
+[0.436s] -- Detecting CXX compiler ABI info - done
+[0.450s] -- Check for working CXX compiler: /bin/c++ - skipped
+[0.454s] -- Detecting CXX compile features
+[0.454s] -- Detecting CXX compile features - done
+[0.468s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.688s] -- Found Python3: /bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.801s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.894s] -- Found angles: 1.16.1 (/opt/ros/jazzy/share/angles/cmake)
+[0.903s] -- Found control_msgs: 5.9.0 (/opt/ros/jazzy/share/control_msgs/cmake)
+[0.979s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.003s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.036s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.067s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.357s] -- Found control_toolbox: 4.11.0 (/opt/ros/jazzy/share/control_toolbox/cmake)
+[1.487s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.492s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.780s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.846s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.908s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.260s] [0mCMake Deprecation Warning at /opt/ros/jazzy/share/tl_expected/cmake/tl_expectedConfig.cmake:37 (message):
+[2.260s]   Package 'tl_expected' is deprecated (This package will be removed in ROS 2
+[2.260s]   Lyrical Luth.
+[2.260s] 
+[2.261s]         Use tl/expected.hpp from libexpected-dev,
+[2.261s]         or rcpputils/tl_expected/expected.hpp if the system header is not available)
+[2.261s] Call Stack (most recent call first):
+[2.261s]   /opt/ros/jazzy/share/parameter_traits/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[2.261s]   /opt/ros/jazzy/share/parameter_traits/cmake/parameter_traitsConfig.cmake:41 (include)
+[2.261s]   /opt/ros/jazzy/share/control_toolbox/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[2.261s]   /opt/ros/jazzy/share/control_toolbox/cmake/control_toolboxConfig.cmake:41 (include)
+[2.262s]   CMakeLists.txt:37 (find_package)
+[2.262s] 
+[2.262s] [0m
+[3.234s] -- Found eigen3_cmake_module: 0.3.1 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[3.244s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.244s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.620s] -- Found controller_interface: 4.45.2 (/opt/ros/jazzy/share/controller_interface/cmake)
+[3.753s] -- Found kdl_parser: 2.11.0 (/opt/ros/jazzy/share/kdl_parser/cmake)
+[3.953s] -- Configuring done (3.9s)
+[4.040s] -- Generating done (0.1s)
+[4.050s] -- Build files have been written to: /home/moveright/omx_ws/build/om_gravity_compensation_controller
+[4.077s] Invoked command in '/home/moveright/omx_ws/build/om_gravity_compensation_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake /home/moveright/omx_ws/src/open_manipulator/ros2_controller/om_gravity_compensation_controller -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/om_gravity_compensation_controller
+[4.078s] Invoking command in '/home/moveright/omx_ws/build/om_gravity_compensation_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --build /home/moveright/omx_ws/build/om_gravity_compensation_controller -- -j8 -l8
+[5.600s] [ 25%] [34m[1mRunning `/opt/ros/jazzy/bin/generate_parameter_library_cpp /home/moveright/omx_ws/build/om_gravity_compensation_controller/include/om_gravity_compensation_controller/gravity_compensation_controller_parameters.hpp /home/moveright/omx_ws/src/open_manipulator/ros2_controller/om_gravity_compensation_controller/src/gravity_compensation_controller_parameters.yaml `[0m
+[5.600s] [ 50%] [34m[1mCreating deprecated header file /home/moveright/omx_ws/build/om_gravity_compensation_controller/include/gravity_compensation_controller_parameters.hpp[0m
+[5.601s] [ 50%] Built target gravity_compensation_controller_parameters
+[5.601s] [ 75%] [32mBuilding CXX object CMakeFiles/gravity_compensation_controller.dir/src/gravity_compensation_controller.cpp.o[0m
+[14.562s] In file included from [01m[K/opt/ros/jazzy/include/parameter_traits/parameter_traits/parameter_traits.hpp:37[m[K,
+[14.562s]                  from [01m[K/home/moveright/omx_ws/build/om_gravity_compensation_controller/include/om_gravity_compensation_controller/gravity_compensation_controller_parameters.hpp:26[m[K,
+[14.562s]                  from [01m[K/home/moveright/omx_ws/src/open_manipulator/ros2_controller/om_gravity_compensation_controller/include/gravity_compensation_controller/gravity_compensation_controller.hpp:46[m[K,
+[14.562s]                  from [01m[K/home/moveright/omx_ws/src/open_manipulator/ros2_controller/om_gravity_compensation_controller/src/gravity_compensation_controller.cpp:15[m[K:
+[14.562s] [01m[K/opt/ros/jazzy/include/tl_expected/expected.hpp:18:167:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: tl_expected/expected.hpp is deprecated. Use <tl/expected.hpp> from libexpected-dev, or <rcpputils/tl_expected/expected.hpp> if the system header is not available.[m[K’
+[14.562s]    18 |   "tl_expected/expected.hpp is deprecated. Use <tl/expected.hpp> from libexpected-dev, or <rcpputils/tl_expected/expected.hpp> if the system header is not available."[01;36m[K)[m[K // NOLINT
+[14.562s]       |                                                                                                                                                                       [01;36m[K^[m[K
+[61.084s] [100%] [32m[1mLinking CXX shared library libgravity_compensation_controller.so[0m
+[61.698s] [100%] Built target gravity_compensation_controller
+[61.794s] Invoked command in '/home/moveright/omx_ws/build/om_gravity_compensation_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --build /home/moveright/omx_ws/build/om_gravity_compensation_controller -- -j8 -l8
+[61.796s] Invoking command in '/home/moveright/omx_ws/build/om_gravity_compensation_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --install /home/moveright/omx_ws/build/om_gravity_compensation_controller
+[61.825s] -- Install configuration: "Release"
+[61.825s] -- Execute custom install script
+[61.833s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/include/om_gravity_compensation_controller/gravity_compensation_controller_parameters.hpp
+[61.879s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller//gravity_compensation_plugin.xml
+[61.926s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/include/gravity_compensation_controller/gravity_compensation_controller/gravity_compensation_controller.hpp
+[61.970s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/include/gravity_compensation_controller/gravity_compensation_controller/visibility_control.h
+[62.008s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/environment/library_path.sh
+[62.040s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/environment/library_path.dsv
+[62.085s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/ament_index/resource_index/package_run_dependencies/om_gravity_compensation_controller
+[62.130s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/ament_index/resource_index/parent_prefix_path/om_gravity_compensation_controller
+[62.169s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/environment/ament_prefix_path.sh
+[62.189s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/environment/ament_prefix_path.dsv
+[62.227s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/environment/path.sh
+[62.246s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/environment/path.dsv
+[62.269s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/local_setup.bash
+[62.289s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/local_setup.sh
+[62.313s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/local_setup.zsh
+[62.332s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/local_setup.dsv
+[62.352s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/package.dsv
+[62.373s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/ament_index/resource_index/packages/om_gravity_compensation_controller
+[62.397s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/om_gravity_compensation_controller
+[62.421s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[62.442s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/cmake/ament_cmake_export_targets-extras.cmake
+[62.463s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/cmake/om_gravity_compensation_controllerConfig.cmake
+[62.487s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/cmake/om_gravity_compensation_controllerConfig-version.cmake
+[62.510s] -- Symlinking: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/package.xml
+[62.530s] -- Installing: /home/moveright/omx_ws/install/om_gravity_compensation_controller/lib/libgravity_compensation_controller.so
+[62.535s] -- Set non-toolchain portion of runtime path of "/home/moveright/omx_ws/install/om_gravity_compensation_controller/lib/libgravity_compensation_controller.so" to ""
+[62.535s] -- Installing: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/cmake/export_gravity_compensation_controllerExport.cmake
+[62.537s] -- Installing: /home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/cmake/export_gravity_compensation_controllerExport-release.cmake
+[62.546s] Invoked command in '/home/moveright/omx_ws/build/om_gravity_compensation_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --install /home/moveright/omx_ws/build/om_gravity_compensation_controller

@@ -1,0 +1,16 @@
+{
+  "package_name": "dynamixel_interfaces",
+  "output_dir": "/home/moveright/omx_ws/build/dynamixel_interfaces/rosidl_generator_type_description/dynamixel_interfaces",
+  "idl_tuples": [
+    "/home/moveright/omx_ws/build/dynamixel_interfaces/rosidl_adapter/dynamixel_interfaces:msg/DynamixelState.idl",
+    "/home/moveright/omx_ws/build/dynamixel_interfaces/rosidl_adapter/dynamixel_interfaces:srv/GetDataFromDxl.idl",
+    "/home/moveright/omx_ws/build/dynamixel_interfaces/rosidl_adapter/dynamixel_interfaces:srv/SetDataToDxl.idl",
+    "/home/moveright/omx_ws/build/dynamixel_interfaces/rosidl_adapter/dynamixel_interfaces:srv/RebootDxl.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}

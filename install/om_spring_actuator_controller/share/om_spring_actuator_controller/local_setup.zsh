@@ -1,0 +1,1 @@
+/home/moveright/omx_ws/build/om_spring_actuator_controller/ament_cmake_environment_hooks/local_setup.zsh

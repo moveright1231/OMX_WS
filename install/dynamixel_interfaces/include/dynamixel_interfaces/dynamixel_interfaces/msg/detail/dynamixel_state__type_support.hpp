@@ -1,0 +1,1 @@
+/home/moveright/omx_ws/build/dynamixel_interfaces/rosidl_generator_cpp/dynamixel_interfaces/msg/detail/dynamixel_state__type_support.hpp

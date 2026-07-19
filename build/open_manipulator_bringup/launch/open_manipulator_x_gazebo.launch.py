@@ -1,0 +1,1 @@
+/home/moveright/omx_ws/src/open_manipulator/open_manipulator_bringup/launch/open_manipulator_x_gazebo.launch.py

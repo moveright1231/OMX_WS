@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: open-manipulator-teleop
+Version: 5.0.0
+Summary: OpenManipulator teleoperation package
+Author: Sungho Woo, Wonho Yun
+Author-email: wsh@robotis.com, ywh@robotis.com
+Maintainer: Pyo
+Maintainer-email: pyo@robotis.com
+License: Apache License 2.0

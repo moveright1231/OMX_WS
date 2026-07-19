@@ -1,0 +1,1 @@
+/home/moveright/omx_ws/build/dynamixel_interfaces/rosidl_generator_cpp/dynamixel_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp

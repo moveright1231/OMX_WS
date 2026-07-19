@@ -1,0 +1,3 @@
+/home/moveright/omx_ws/install/om_spring_actuator_controller/lib/libspring_actuator_controller.so
+/home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/cmake/export_spring_actuator_controllerExport.cmake
+/home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/cmake/export_spring_actuator_controllerExport-release.cmake

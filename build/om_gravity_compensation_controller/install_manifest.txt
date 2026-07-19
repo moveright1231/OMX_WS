@@ -1,0 +1,3 @@
+/home/moveright/omx_ws/install/om_gravity_compensation_controller/lib/libgravity_compensation_controller.so
+/home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/cmake/export_gravity_compensation_controllerExport.cmake
+/home/moveright/omx_ws/install/om_gravity_compensation_controller/share/om_gravity_compensation_controller/cmake/export_gravity_compensation_controllerExport-release.cmake

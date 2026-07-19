@@ -1,0 +1,41 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from dynamixel_interfaces/msg/DynamixelState.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module dynamixel_interfaces {
+  module msg {
+    module DynamixelState_Constants {
+      const int32 COMM_STATE_OK = 0;
+      const int32 COMM_STATE_CANNOT_FIND_CONTROL_ITEM = -1;
+      const int32 COMM_STATE_OPEN_PORT_FAIL = -2;
+      const int32 COMM_STATE_INDIRECT_ADDR_FAIL = -3;
+      const int32 COMM_STATE_ITEM_WRITE_FAIL = -4;
+      const int32 COMM_STATE_ITEM_READ_FAIL = -5;
+      const int32 COMM_STATE_SYNC_WRITE_FAIL = -6;
+      const int32 COMM_STATE_SYNC_READ_FAIL = -7;
+      const int32 COMM_STATE_SET_SYNC_WRITE_FAIL = -8;
+      const int32 COMM_STATE_SET_SYNC_READ_FAIL = -9;
+      const int32 COMM_STATE_BULK_WRITE_FAIL = -10;
+      const int32 COMM_STATE_BULK_READ_FAIL = -11;
+      const int32 COMM_STATE_SET_BULK_WRITE_FAIL = -12;
+      const int32 COMM_STATE_SET_BULK_READ_FAIL = -13;
+      const int32 COMM_STATE_SET_READ_ITEM_FAIL = -14;
+      const int32 COMM_STATE_SET_WRITE_ITEM_FAIL = -15;
+      const int32 COMM_STATE_DXL_HARDWARE_ERROR = -16;
+      const int32 COMM_STATE_DXL_REBOOT_FAIL = -17;
+    };
+    struct DynamixelState {
+      std_msgs::msg::Header header;
+
+      int32 comm_state;
+
+      sequence<int32> id;
+
+      sequence<boolean> torque_state;
+
+      sequence<int32> dxl_hw_state;
+    };
+  };
+};

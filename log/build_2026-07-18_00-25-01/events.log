@@ -1,0 +1,66 @@
+[0.000000] (-) TimerEvent: {}
+[0.000082] (-) JobUnselected: {'identifier': 'dynamixel_hardware_interface'}
+[0.000131] (-) JobUnselected: {'identifier': 'dynamixel_interfaces'}
+[0.000162] (-) JobUnselected: {'identifier': 'dynamixel_sdk'}
+[0.000391] (-) JobUnselected: {'identifier': 'dynamixel_sdk_custom_interfaces'}
+[0.000426] (-) JobUnselected: {'identifier': 'dynamixel_sdk_examples'}
+[0.000694] (-) JobUnselected: {'identifier': 'om_gravity_compensation_controller'}
+[0.000738] (-) JobUnselected: {'identifier': 'om_joint_trajectory_command_broadcaster'}
+[0.000891] (-) JobUnselected: {'identifier': 'om_spring_actuator_controller'}
+[0.000933] (-) JobUnselected: {'identifier': 'open_manipulator'}
+[0.001132] (-) JobUnselected: {'identifier': 'open_manipulator_bringup'}
+[0.001223] (-) JobUnselected: {'identifier': 'open_manipulator_collision'}
+[0.001320] (-) JobUnselected: {'identifier': 'open_manipulator_description'}
+[0.001502] (-) JobUnselected: {'identifier': 'open_manipulator_gui'}
+[0.001558] (-) JobUnselected: {'identifier': 'open_manipulator_moveit_config'}
+[0.001588] (-) JobUnselected: {'identifier': 'open_manipulator_playground'}
+[0.001680] (-) JobUnselected: {'identifier': 'open_manipulator_teleop'}
+[0.001744] (pymoveit2) JobQueued: {'identifier': 'pymoveit2', 'dependencies': OrderedDict()}
+[0.001884] (pymoveit2) JobStarted: {'identifier': 'pymoveit2'}
+[0.014717] (pymoveit2) JobProgress: {'identifier': 'pymoveit2', 'progress': 'cmake'}
+[0.017348] (pymoveit2) Command: {'cmd': ['/bin/cmake', '/home/moveright/omx_ws/src/pymoveit2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/pymoveit2'], 'cwd': '/home/moveright/omx_ws/build/pymoveit2', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/moveright', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'MAIL': '/var/mail/moveright', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'AI_AGENT': 'claude-code_2-1-212_agent', 'USER': 'moveright', 'SSH_CLIENT': '172.18.128.1 63184 2222', 'CLAUDE_CODE_ENTRYPOINT': 'claude-vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"ko","osLocale":"ko","resolvedLanguage":"ko","defaultMessagesFile":"/home/moveright/.vscode-server/cli/servers/Stable-6928394f91b684055b873eecb8bc281365131f1c/server/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/moveright/.vscode-server/data/clp/ed83e22eb9df8d5f932b7b7705a97ced.ko/tcf.json","messagesFile":"/home/moveright/.vscode-server/data/clp/ed83e22eb9df8d5f932b7b7705a97ced.ko/6928394f91b684055b873eecb8bc281365131f1c/nls.messages.json","corruptMarkerFile":"/home/moveright/.vscode-server/data/clp/ed83e22eb9df8d5f932b7b7705a97ced.ko/corrupted.info"},"locale":"ko","availableLanguages":{"*":"ko"},"_languagePackId":"ed83e22eb9df8d5f932b7b7705a97ced.ko","_languagePackSupport":true,"_translationsConfigFile":"/home/moveright/.vscode-server/data/clp/ed83e22eb9df8d5f932b7b7705a97ced.ko/tcf.json","_cacheRoot":"/home/moveright/.vscode-server/data/clp/ed83e22eb9df8d5f932b7b7705a97ced.ko","_resolvedLanguagePackCoreLocation":"/home/moveright/.vscode-server/data/clp/ed83e22eb9df8d5f932b7b7705a97ced.ko/6928394f91b684055b873eecb8bc281365131f1c","_corruptedFile":"/home/moveright/.vscode-server/data/clp/ed83e22eb9df8d5f932b7b7705a97ced.ko/corrupted.info"}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIT_EDITOR': 'true', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'CLAUDE_AGENT_SDK_VERSION': '0.3.212', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/lib64:', 'BROWSER': '/home/moveright/.vscode-server/cli/servers/Stable-6928394f91b684055b873eecb8bc281365131f1c/server/bin/helpers/browser.sh', 'HOME': '/home/moveright', 'CONDA_SHLVL': '0', 'GIT_CONFIG_COUNT': '1', 'OLDPWD': '/home/moveright/omx_ws/src', 'VSCODE_RECONNECTION_GRACE_TIME': '10800000', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-76734a18-b270-4a17-a5d5-a1c5a8e53446.sock', 'ROS_PYTHON_VERSION': '3', 'CLAUDE_CODE_CHILD_SESSION': '1', 'COPILOT_OTEL_FILE_EXPORTER_PATH': '/dev/null', 'LC_CTYPE': 'C.UTF-8', '_CE_M': '', '_CONDA_ROOT': '/home/moveright/miniforge3', 'VSCODE_L10N_BUNDLE_LOCATION': 'vscode-local:/Users/idong-u/.vscode/extensions/ms-ceintl.vscode-language-pack-ko-1.129.2026071318/translations/extensions/vscode.json-language-features.i18n.json', 'APPLICATION_INSIGHTS_NO_STATSBEAT': 'true', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'moveright', 'VSCODE_HANDLES_SIGPIPE': 'true', '_': '/bin/colcon', 'ROS_VERSION': '2', 'VSCODE_CLI_REQUIRE_TOKEN': '1acd7172-53e1-4ba7-8c36-a1c599fda656', '_CE_CONDA': '', 'GIT_CONFIG_VALUE_0': 'explicit', 'MCP_CONNECTION_NONBLOCKING': 'true', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/moveright/miniforge3/bin:/home/moveright/.local/bin:/bin:/home/moveright/.local/bin:/home/moveright/.vscode-server/cli/servers/Stable-6928394f91b684055b873eecb8bc281365131f1c/server/bin/remote-cli:/home/moveright/.local/bin:/bin:/home/moveright/.local/bin:/home/moveright/miniforge3/condabin:/home/moveright/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/snap/bin', 'VSCODE_AGENT_FOLDER': '/home/moveright/.vscode-server', 'COREPACK_ENABLE_AUTO_PIN': '0', 'CLAUDE_EFFORT': 'high', 'NoDefaultCurrentDirectoryInExePath': '1', 'LS_COLORS': '', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/moveright/miniforge3/bin/python', 'SHELL': '/bin/bash', 'MXC_BIN_DIR': '/home/moveright/.vscode-server/cli/servers/Stable-6928394f91b684055b873eecb8bc281365131f1c/server/node_modules/@microsoft/mxc-sdk/bin', 'ELECTRON_RUN_AS_NODE': '1', 'GIT_CONFIG_KEY_0': 'safe.bareRepository', 'CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING': 'true', 'CLAUDE_CODE_SESSION_ID': '1a566964-3d35-4212-aa9d-a9e39166b1de', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CLAUDECODE': '1', '_CONDA_EXE': '/home/moveright/miniforge3/bin/conda', 'VIRTUAL_ENV': '/home/moveright/miniforge3', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/moveright/omx_ws/build/pymoveit2', 'CUDA_HOME': '', 'CONDA_EXE': '/home/moveright/miniforge3/bin/conda', 'SSH_CONNECTION': '172.18.128.1 63184 172.18.131.2 2222', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'CLAUDE_CODE_EXECPATH': '/home/moveright/.vscode-server/extensions/anthropic.claude-code-2.1.212-linux-x64/resources/native-binary/claude', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'CLAUDE_CODE_ENABLE_TASKS': '0', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099760] (-) TimerEvent: {}
+[0.142040] (pymoveit2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.5.0\n'}
+[0.199880] (-) TimerEvent: {}
+[0.227804] (pymoveit2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.5.0\n'}
+[0.255326] (pymoveit2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300004] (-) TimerEvent: {}
+[0.400236] (-) TimerEvent: {}
+[0.403333] (pymoveit2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.414205] (pymoveit2) StdoutLine: {'line': b'-- Check for working C compiler: /bin/cc - skipped\n'}
+[0.414635] (pymoveit2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.415128] (pymoveit2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.427985] (pymoveit2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500373] (-) TimerEvent: {}
+[0.567951] (pymoveit2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.575739] (pymoveit2) StdoutLine: {'line': b'-- Check for working CXX compiler: /bin/c++ - skipped\n'}
+[0.576011] (pymoveit2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.576452] (pymoveit2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.584321] (pymoveit2) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.600518] (-) TimerEvent: {}
+[0.700737] (-) TimerEvent: {}
+[0.719528] (pymoveit2) StdoutLine: {'line': b'-- Found Python3: /home/moveright/miniforge3/bin/python3 (found version "3.12.12") found components: Interpreter \n'}
+[0.793323] (pymoveit2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.800834] (-) TimerEvent: {}
+[0.901029] (-) TimerEvent: {}
+[0.906667] (pymoveit2) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[0.906891] (pymoveit2) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>\n'}
+[0.906968] (pymoveit2) StderrLine: {'line': b'    from catkin_pkg.package import parse_package_string\n'}
+[0.907072] (pymoveit2) StderrLine: {'line': b"ModuleNotFoundError: No module named 'catkin_pkg'\n"}
+[0.909529] (pymoveit2) StderrLine: {'line': b'CMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[0.909734] (pymoveit2) StderrLine: {'line': b'  execute_process(/home/moveright/miniforge3/bin/python3\n'}
+[0.909823] (pymoveit2) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[0.909894] (pymoveit2) StderrLine: {'line': b'  /home/moveright/omx_ws/src/pymoveit2/package.xml\n'}
+[0.910144] (pymoveit2) StderrLine: {'line': b'  /home/moveright/omx_ws/build/pymoveit2/ament_cmake_core/package.cmake)\n'}
+[0.910224] (pymoveit2) StderrLine: {'line': b'  returned error code 1\n'}
+[0.910289] (pymoveit2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.910347] (pymoveit2) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[0.910426] (pymoveit2) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:60 (ament_package_xml)\n'}
+[0.910513] (pymoveit2) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)\n'}
+[0.910600] (pymoveit2) StderrLine: {'line': b'  CMakeLists.txt:9 (ament_python_install_package)\n'}
+[0.910662] (pymoveit2) StderrLine: {'line': b'\n'}
+[0.910718] (pymoveit2) StderrLine: {'line': b'\n'}
+[0.910773] (pymoveit2) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.917137] (pymoveit2) CommandEnded: {'returncode': 1}
+[0.949991] (pymoveit2) JobEnded: {'identifier': 'pymoveit2', 'rc': 1}
+[0.960387] (-) EventReactorShutdown: {}

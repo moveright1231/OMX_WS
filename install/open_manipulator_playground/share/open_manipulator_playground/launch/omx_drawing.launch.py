@@ -1,0 +1,1 @@
+/home/moveright/omx_ws/src/open_manipulator/open_manipulator_playground/launch/omx_drawing.launch.py

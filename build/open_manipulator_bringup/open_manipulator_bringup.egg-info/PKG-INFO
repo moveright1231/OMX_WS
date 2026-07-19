@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: open-manipulator-bringup
+Version: 5.0.0
+Summary: OpenMANIPULATOR bringup ROS 2 package.
+Maintainer: Pyo
+Maintainer-email: pyo@robotis.com
+License: Apache 2.0

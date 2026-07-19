@@ -1,0 +1,1 @@
+/home/moveright/omx_ws/build/open_manipulator_playground/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake

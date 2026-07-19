@@ -1,0 +1,104 @@
+[0.039s] Invoking command in '/home/moveright/omx_ws/build/open_manipulator_playground': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake /home/moveright/omx_ws/src/open_manipulator/open_manipulator_playground -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/open_manipulator_playground
+[4.562s] -- The C compiler identification is GNU 11.5.0
+[4.562s] -- The CXX compiler identification is GNU 11.5.0
+[4.562s] -- Detecting C compiler ABI info
+[4.562s] -- Detecting C compiler ABI info - done
+[4.563s] -- Check for working C compiler: /bin/cc - skipped
+[4.563s] -- Detecting C compile features
+[4.563s] -- Detecting C compile features - done
+[4.563s] -- Detecting CXX compiler ABI info
+[4.563s] -- Detecting CXX compiler ABI info - done
+[4.563s] -- Check for working CXX compiler: /bin/c++ - skipped
+[4.563s] -- Detecting CXX compile features
+[4.563s] -- Detecting CXX compile features - done
+[4.563s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[4.563s] -- Found Python3: /bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.564s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.564s] -- Found moveit_ros_planning_interface: 2.12.4 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)
+[4.564s] -- Found Boost: /lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+[4.564s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[4.564s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[4.564s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.564s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.564s] -- Found Boost: /lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[4.564s] -- Found parameter_traits: 0.7.3 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[4.565s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[4.566s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[4.782s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.826s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[4.893s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.095s] [0mCMake Deprecation Warning at /opt/ros/jazzy/share/tl_expected/cmake/tl_expectedConfig.cmake:37 (message):
+[5.095s]   Package 'tl_expected' is deprecated (This package will be removed in ROS 2
+[5.095s]   Lyrical Luth.
+[5.095s] 
+[5.095s]         Use tl/expected.hpp from libexpected-dev,
+[5.096s]         or rcpputils/tl_expected/expected.hpp if the system header is not available)
+[5.096s] Call Stack (most recent call first):
+[5.096s]   /opt/ros/jazzy/share/parameter_traits/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[5.096s]   /opt/ros/jazzy/share/parameter_traits/cmake/parameter_traitsConfig.cmake:41 (include)
+[5.096s]   /opt/ros/jazzy/share/generate_parameter_library/cmake/generate_parameter_library-extras.cmake:30 (find_package)
+[5.096s]   /opt/ros/jazzy/share/generate_parameter_library/cmake/generate_parameter_libraryConfig.cmake:41 (include)
+[5.096s]   /opt/ros/jazzy/share/moveit_core/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[5.096s]   /opt/ros/jazzy/share/moveit_core/cmake/moveit_coreConfig.cmake:41 (include)
+[5.096s]   /opt/ros/jazzy/share/moveit_ros_planning_interface/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[5.096s]   /opt/ros/jazzy/share/moveit_ros_planning_interface/cmake/moveit_ros_planning_interfaceConfig.cmake:41 (include)
+[5.097s]   CMakeLists.txt:15 (find_package)
+[5.097s] 
+[5.097s] [0m
+[5.109s] -- Found rclcpp_lifecycle: 28.1.21 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[5.265s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[5.268s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[5.540s] -- Found Boost: /lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+[5.617s] -- Found Boost: /lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+[5.660s] -- Found Boost: /lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+[5.834s] -- Configuring done (5.8s)
+[5.936s] -- Generating done (0.1s)
+[5.956s] -- Build files have been written to: /home/moveright/omx_ws/build/open_manipulator_playground
+[6.005s] Invoked command in '/home/moveright/omx_ws/build/open_manipulator_playground' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake /home/moveright/omx_ws/src/open_manipulator/open_manipulator_playground -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/open_manipulator_playground
+[6.006s] Invoking command in '/home/moveright/omx_ws/build/open_manipulator_playground': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --build /home/moveright/omx_ws/build/open_manipulator_playground -- -j8 -l8
+[9.538s] [ 16%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_hello_moveit.dir/src/open_manipulator_x_hello_moveit.cpp.o[0m
+[9.538s] [ 33%] [32mBuilding CXX object CMakeFiles/omy_f3m_hello_moveit.dir/src/omy_f3m_hello_moveit.cpp.o[0m
+[9.538s] [ 50%] [32mBuilding CXX object CMakeFiles/omy_3m_hello_moveit.dir/src/omy_3m_hello_moveit.cpp.o[0m
+[47.945s] [ 66%] [32m[1mLinking CXX executable open_manipulator_x_hello_moveit[0m
+[49.177s] [ 66%] Built target open_manipulator_x_hello_moveit
+[51.836s] [ 83%] [32m[1mLinking CXX executable omy_f3m_hello_moveit[0m
+[51.992s] [100%] [32m[1mLinking CXX executable omy_3m_hello_moveit[0m
+[52.588s] [100%] Built target omy_f3m_hello_moveit
+[52.627s] [100%] Built target omy_3m_hello_moveit
+[52.700s] Invoked command in '/home/moveright/omx_ws/build/open_manipulator_playground' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --build /home/moveright/omx_ws/build/open_manipulator_playground -- -j8 -l8
+[52.703s] Invoking command in '/home/moveright/omx_ws/build/open_manipulator_playground': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --install /home/moveright/omx_ws/build/open_manipulator_playground
+[52.720s] -- Install configuration: "Release"
+[52.721s] -- Execute custom install script
+[52.724s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/include/open_manipulator_playground/omy_3m_hello_moveit.h
+[52.744s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/include/open_manipulator_playground/omy_f3m_hello_moveit.h
+[52.766s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/include/open_manipulator_playground/open_manipulator_x_hello_moveit.h
+[52.791s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/lib/open_manipulator_playground/shape_detector_node.py
+[52.815s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/lib/open_manipulator_playground/omx_trajectory_controller_node.py
+[52.839s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/launch/omx_drawing.launch.py
+[52.864s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/images/square.png
+[52.890s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/ament_index/resource_index/package_run_dependencies/open_manipulator_playground
+[52.914s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/ament_index/resource_index/parent_prefix_path/open_manipulator_playground
+[52.937s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/environment/ament_prefix_path.sh
+[52.956s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/environment/ament_prefix_path.dsv
+[52.978s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/environment/path.sh
+[53.001s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/environment/path.dsv
+[53.023s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/local_setup.bash
+[53.042s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/local_setup.sh
+[53.064s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/local_setup.zsh
+[53.086s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/local_setup.dsv
+[53.103s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/package.dsv
+[53.122s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/ament_index/resource_index/packages/open_manipulator_playground
+[53.141s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/cmake/ament_cmake_export_include_directories-extras.cmake
+[53.159s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/cmake/ament_cmake_export_targets-extras.cmake
+[53.181s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/cmake/open_manipulator_playgroundConfig.cmake
+[53.198s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/cmake/open_manipulator_playgroundConfig-version.cmake
+[53.219s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/package.xml
+[53.239s] -- Installing: /home/moveright/omx_ws/install/open_manipulator_playground/lib/open_manipulator_playground/open_manipulator_x_hello_moveit
+[53.240s] -- Set non-toolchain portion of runtime path of "/home/moveright/omx_ws/install/open_manipulator_playground/lib/open_manipulator_playground/open_manipulator_x_hello_moveit" to ""
+[53.240s] -- Installing: /home/moveright/omx_ws/install/open_manipulator_playground/lib/open_manipulator_playground/omy_f3m_hello_moveit
+[53.240s] -- Set non-toolchain portion of runtime path of "/home/moveright/omx_ws/install/open_manipulator_playground/lib/open_manipulator_playground/omy_f3m_hello_moveit" to ""
+[53.241s] -- Installing: /home/moveright/omx_ws/install/open_manipulator_playground/lib/open_manipulator_playground/omy_3m_hello_moveit
+[53.242s] -- Set non-toolchain portion of runtime path of "/home/moveright/omx_ws/install/open_manipulator_playground/lib/open_manipulator_playground/omy_3m_hello_moveit" to ""
+[53.243s] -- Installing: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/cmake/export_open_manipulator_playgroundExport.cmake
+[53.243s] -- Installing: /home/moveright/omx_ws/install/open_manipulator_playground/share/open_manipulator_playground/cmake/export_open_manipulator_playgroundExport-release.cmake
+[53.250s] Invoked command in '/home/moveright/omx_ws/build/open_manipulator_playground' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --install /home/moveright/omx_ws/build/open_manipulator_playground

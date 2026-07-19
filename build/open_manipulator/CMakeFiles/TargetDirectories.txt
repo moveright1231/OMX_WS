@@ -1,0 +1,9 @@
+/home/moveright/omx_ws/build/open_manipulator/CMakeFiles/uninstall.dir
+/home/moveright/omx_ws/build/open_manipulator/CMakeFiles/open_manipulator_uninstall.dir
+/home/moveright/omx_ws/build/open_manipulator/CMakeFiles/test.dir
+/home/moveright/omx_ws/build/open_manipulator/CMakeFiles/edit_cache.dir
+/home/moveright/omx_ws/build/open_manipulator/CMakeFiles/rebuild_cache.dir
+/home/moveright/omx_ws/build/open_manipulator/CMakeFiles/list_install_components.dir
+/home/moveright/omx_ws/build/open_manipulator/CMakeFiles/install.dir
+/home/moveright/omx_ws/build/open_manipulator/CMakeFiles/install/local.dir
+/home/moveright/omx_ws/build/open_manipulator/CMakeFiles/install/strip.dir

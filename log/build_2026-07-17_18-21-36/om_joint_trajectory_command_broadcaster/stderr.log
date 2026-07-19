@@ -1,0 +1,21 @@
+[0mCMake Deprecation Warning at /opt/ros/jazzy/share/tl_expected/cmake/tl_expectedConfig.cmake:37 (message):
+  Package 'tl_expected' is deprecated (This package will be removed in ROS 2
+  Lyrical Luth.
+
+        Use tl/expected.hpp from libexpected-dev,
+        or rcpputils/tl_expected/expected.hpp if the system header is not available)
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/parameter_traits/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/jazzy/share/parameter_traits/cmake/parameter_traitsConfig.cmake:41 (include)
+  /opt/ros/jazzy/share/generate_parameter_library/cmake/generate_parameter_library-extras.cmake:30 (find_package)
+  /opt/ros/jazzy/share/generate_parameter_library/cmake/generate_parameter_libraryConfig.cmake:41 (include)
+  CMakeLists.txt:31 (find_package)
+
+[0m
+In file included from [01m[K/opt/ros/jazzy/include/parameter_traits/parameter_traits/parameter_traits.hpp:37[m[K,
+                 from [01m[K/home/moveright/omx_ws/build/om_joint_trajectory_command_broadcaster/include/om_joint_trajectory_command_broadcaster/joint_trajectory_command_broadcaster_parameters.hpp:26[m[K,
+                 from [01m[K/home/moveright/omx_ws/src/open_manipulator/ros2_controller/om_joint_trajectory_command_broadcaster/include/joint_trajectory_command_broadcaster/joint_trajectory_command_broadcaster.hpp:28[m[K,
+                 from [01m[K/home/moveright/omx_ws/src/open_manipulator/ros2_controller/om_joint_trajectory_command_broadcaster/src/joint_trajectory_command_broadcaster.cpp:15[m[K:
+[01m[K/opt/ros/jazzy/include/tl_expected/expected.hpp:18:167:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: tl_expected/expected.hpp is deprecated. Use <tl/expected.hpp> from libexpected-dev, or <rcpputils/tl_expected/expected.hpp> if the system header is not available.[m[K’
+   18 |   "tl_expected/expected.hpp is deprecated. Use <tl/expected.hpp> from libexpected-dev, or <rcpputils/tl_expected/expected.hpp> if the system header is not available."[01;36m[K)[m[K // NOLINT
+      |                                                                                                                                                                       [01;36m[K^[m[K

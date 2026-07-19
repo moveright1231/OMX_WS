@@ -1,0 +1,1 @@
+rclcpp;std_msgs;sensor_msgs;qtbase5-dev;qt5-qmake;libqt5-core;libqt5-gui;eigen3_cmake_module;moveit_msgs;moveit_core;moveit_ros_planning;moveit_ros_planning_interface;geometry_msgs

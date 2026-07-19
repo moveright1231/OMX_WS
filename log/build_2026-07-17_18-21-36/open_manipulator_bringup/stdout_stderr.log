@@ -1,0 +1,81 @@
+running develop
+running egg_info
+creating open_manipulator_bringup.egg-info
+writing open_manipulator_bringup.egg-info/PKG-INFO
+writing dependency_links to open_manipulator_bringup.egg-info/dependency_links.txt
+writing entry points to open_manipulator_bringup.egg-info/entry_points.txt
+writing requirements to open_manipulator_bringup.egg-info/requires.txt
+writing top-level names to open_manipulator_bringup.egg-info/top_level.txt
+writing manifest file 'open_manipulator_bringup.egg-info/SOURCES.txt'
+reading manifest file 'open_manipulator_bringup.egg-info/SOURCES.txt'
+writing manifest file 'open_manipulator_bringup.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/moveright/omx_ws/install/open_manipulator_bringup/lib/python3.12/site-packages/open-manipulator-bringup.egg-link (link to .)
+Installing joint_trajectory_executor script to /home/moveright/omx_ws/install/open_manipulator_bringup/lib/open_manipulator_bringup
+Installing om_create_udev_rules script to /home/moveright/omx_ws/install/open_manipulator_bringup/lib/open_manipulator_bringup
+
+Installed /home/moveright/omx_ws/build/open_manipulator_bringup
+running symlink_data
+creating /home/moveright/omx_ws/install/open_manipulator_bringup/share/ament_index
+creating /home/moveright/omx_ws/install/open_manipulator_bringup/share/ament_index/resource_index
+creating /home/moveright/omx_ws/install/open_manipulator_bringup/share/ament_index/resource_index/packages
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/resource/open_manipulator_bringup -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/ament_index/resource_index/packages
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/package.xml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup
+creating /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omy_3m_gazebo.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/open_manipulator_x.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omx_f_follower_ai_gazebo.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/open_manipulator_x_gazebo.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omy_f3m_follower_ai.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omx_ai.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omy_f3m_follower_ai_gazebo.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omy_3m.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omy_f3m_leader_ai.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omy_3m_unpack.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omy_f3m.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omy_l100_follower_ai.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/camera_usb_cam.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omx_f_follower_ai.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omx_f_gazebo.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omy_ai.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omy_f3m_gazebo.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omx_f.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omy_l100_leader_ai.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/camera_realsense.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omx_l_leader_ai.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omy_3m_pack.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/launch/omy_ai_reverse.launch.py -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+creating /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config
+creating /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/open_manipulator_x
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/open_manipulator_x/hardware_controller_manager.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/open_manipulator_x
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/open_manipulator_x/initial_positions.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/open_manipulator_x
+creating /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_3m
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omy_3m/hardware_controller_manager.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_3m
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omy_3m/qc_positions.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_3m
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omy_3m/initial_positions.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_3m
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omy_3m/pack_positions.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_3m
+creating /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_f3m
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omy_f3m/hardware_controller_manager.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_f3m
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omy_f3m/initial_positions.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_f3m
+creating /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_f3m_follower_ai
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omy_f3m_follower_ai/hardware_controller_manager.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_f3m_follower_ai
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omy_f3m_follower_ai/qc_positions.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_f3m_follower_ai
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omy_f3m_follower_ai/initial_positions.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_f3m_follower_ai
+creating /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_f3m_leader_ai
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omy_f3m_leader_ai/hardware_controller_manager.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_f3m_leader_ai
+creating /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_l100_follower_ai
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omy_l100_follower_ai/hardware_controller_manager.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_l100_follower_ai
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omy_l100_follower_ai/initial_positions.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_l100_follower_ai
+creating /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_l100_leader_ai
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omy_l100_leader_ai/hardware_controller_manager.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omy_l100_leader_ai
+creating /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omx_f
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omx_f/hardware_controller_manager.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omx_f
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omx_f/initial_positions.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omx_f
+creating /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omx_f_follower_ai
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omx_f_follower_ai/hardware_controller_manager.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omx_f_follower_ai
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omx_f_follower_ai/initial_positions.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omx_f_follower_ai
+creating /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omx_l_leader_ai
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/config/omx_l_leader_ai/hardware_controller_manager.yaml -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omx_l_leader_ai
+creating /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/worlds
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/worlds/empty_world.sdf -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/worlds
+symbolically linking /home/moveright/omx_ws/build/open_manipulator_bringup/open-manipulator-cdc.rules -> /home/moveright/omx_ws/install/open_manipulator_bringup/share/open_manipulator_bringup

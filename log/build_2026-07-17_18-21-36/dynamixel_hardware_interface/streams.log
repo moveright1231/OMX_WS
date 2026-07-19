@@ -1,0 +1,211 @@
+[0.096s] Invoking command in '/home/moveright/omx_ws/build/dynamixel_hardware_interface': AMENT_PREFIX_PATH=/home/moveright/omx_ws/install/dynamixel_sdk:/home/moveright/omx_ws/install/dynamixel_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveright/omx_ws/install/dynamixel_sdk:/home/moveright/omx_ws/install/dynamixel_interfaces:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/moveright/omx_ws/install/dynamixel_sdk/lib:/home/moveright/omx_ws/install/dynamixel_interfaces/lib:/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/lib64 PYTHONPATH=/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/home/moveright/omx_ws/install/dynamixel_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /bin/cmake /home/moveright/omx_ws/src/dynamixel_hardware_interface -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/dynamixel_hardware_interface
+[3.157s] -- The C compiler identification is GNU 11.5.0
+[3.157s] -- The CXX compiler identification is GNU 11.5.0
+[3.157s] -- Detecting C compiler ABI info
+[3.157s] -- Detecting C compiler ABI info - done
+[3.158s] -- Check for working C compiler: /bin/cc - skipped
+[3.158s] -- Detecting C compile features
+[3.158s] -- Detecting C compile features - done
+[3.158s] -- Detecting CXX compiler ABI info
+[3.158s] -- Detecting CXX compiler ABI info - done
+[3.159s] -- Check for working CXX compiler: /bin/c++ - skipped
+[3.159s] -- Detecting CXX compile features
+[3.159s] -- Detecting CXX compile features - done
+[3.160s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.161s] -- Found Python3: /bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.161s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.161s] -- Found hardware_interface: 4.45.2 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[3.161s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[3.161s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[3.161s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.161s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.041s] -- Found TinyXML2 via Config file: /lib/x86_64-linux-gnu/cmake/tinyxml2
+[4.214s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[4.222s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[4.265s] -- Found TinyXML2 via Config file: /lib/x86_64-linux-gnu/cmake/tinyxml2
+[4.490s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.501s] -- Found TinyXML2 via Config file: /lib/x86_64-linux-gnu/cmake/tinyxml2
+[4.581s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[4.584s] -- Found TinyXML2 via Config file: /lib/x86_64-linux-gnu/cmake/tinyxml2
+[4.619s] -- Found TinyXML2 via Config file: /lib/x86_64-linux-gnu/cmake/tinyxml2
+[4.661s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.889s] -- Found dynamixel_sdk: 4.0.5 (/home/moveright/omx_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+[5.911s] -- Found std_srvs: 5.3.8 (/opt/ros/jazzy/share/std_srvs/cmake)
+[5.968s] -- Found dynamixel_interfaces: 1.0.1 (/home/moveright/omx_ws/install/dynamixel_interfaces/share/dynamixel_interfaces/cmake)
+[6.058s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[6.509s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.552s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.553s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/moveright/omx_ws/src/dynamixel_hardware_interface/include>
+[6.553s] -- Configured cppcheck exclude dirs and/or files: 
+[6.587s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[6.593s] -- Configured cpplint exclude dirs and/or files: 
+[6.598s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.600s] -- Configured 'flake8' exclude dirs and/or files: 
+[6.613s] -- Added test 'lint_cmake' to check CMake code style
+[6.621s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[6.650s] -- Added test 'uncrustify' to check C / C++ code style
+[6.650s] -- Configured uncrustify additional arguments: 
+[6.655s] -- Added test 'xmllint' to check XML markup files
+[6.685s] -- Configuring done (6.5s)
+[6.841s] -- Generating done (0.1s)
+[6.854s] -- Build files have been written to: /home/moveright/omx_ws/build/dynamixel_hardware_interface
+[6.977s] Invoked command in '/home/moveright/omx_ws/build/dynamixel_hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/moveright/omx_ws/install/dynamixel_sdk:/home/moveright/omx_ws/install/dynamixel_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveright/omx_ws/install/dynamixel_sdk:/home/moveright/omx_ws/install/dynamixel_interfaces:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/moveright/omx_ws/install/dynamixel_sdk/lib:/home/moveright/omx_ws/install/dynamixel_interfaces/lib:/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/lib64 PYTHONPATH=/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/home/moveright/omx_ws/install/dynamixel_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /bin/cmake /home/moveright/omx_ws/src/dynamixel_hardware_interface -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/dynamixel_hardware_interface
+[6.977s] Invoking command in '/home/moveright/omx_ws/build/dynamixel_hardware_interface': AMENT_PREFIX_PATH=/home/moveright/omx_ws/install/dynamixel_sdk:/home/moveright/omx_ws/install/dynamixel_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveright/omx_ws/install/dynamixel_sdk:/home/moveright/omx_ws/install/dynamixel_interfaces:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/moveright/omx_ws/install/dynamixel_sdk/lib:/home/moveright/omx_ws/install/dynamixel_interfaces/lib:/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/lib64 PYTHONPATH=/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/home/moveright/omx_ws/install/dynamixel_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /bin/cmake --build /home/moveright/omx_ws/build/dynamixel_hardware_interface -- -j8 -l8
+[25.834s] [ 25%] [32mBuilding CXX object CMakeFiles/dynamixel_hardware_interface.dir/src/dynamixel_hardware_interface.cpp.o[0m
+[25.845s] [ 50%] [32mBuilding CXX object CMakeFiles/dynamixel_hardware_interface.dir/src/dynamixel/dynamixel_info.cpp.o[0m
+[31.469s] [ 75%] [32mBuilding CXX object CMakeFiles/dynamixel_hardware_interface.dir/src/dynamixel/dynamixel.cpp.o[0m
+[39.174s] [100%] [32m[1mLinking CXX shared library libdynamixel_hardware_interface.so[0m
+[39.443s] [100%] Built target dynamixel_hardware_interface
+[39.487s] Invoked command in '/home/moveright/omx_ws/build/dynamixel_hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/moveright/omx_ws/install/dynamixel_sdk:/home/moveright/omx_ws/install/dynamixel_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveright/omx_ws/install/dynamixel_sdk:/home/moveright/omx_ws/install/dynamixel_interfaces:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/moveright/omx_ws/install/dynamixel_sdk/lib:/home/moveright/omx_ws/install/dynamixel_interfaces/lib:/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/lib64 PYTHONPATH=/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/home/moveright/omx_ws/install/dynamixel_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /bin/cmake --build /home/moveright/omx_ws/build/dynamixel_hardware_interface -- -j8 -l8
+[39.489s] Invoking command in '/home/moveright/omx_ws/build/dynamixel_hardware_interface': AMENT_PREFIX_PATH=/home/moveright/omx_ws/install/dynamixel_sdk:/home/moveright/omx_ws/install/dynamixel_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveright/omx_ws/install/dynamixel_sdk:/home/moveright/omx_ws/install/dynamixel_interfaces:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/moveright/omx_ws/install/dynamixel_sdk/lib:/home/moveright/omx_ws/install/dynamixel_interfaces/lib:/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/lib64 PYTHONPATH=/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/home/moveright/omx_ws/install/dynamixel_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /bin/cmake --install /home/moveright/omx_ws/build/dynamixel_hardware_interface
+[39.502s] -- Install configuration: "Release"
+[39.503s] -- Execute custom install script
+[39.504s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface//dynamixel_hardware_interface_plugin.xml
+[39.522s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/include/dynamixel_hardware_interface/dynamixel/dynamixel.hpp
+[39.537s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/include/dynamixel_hardware_interface/dynamixel/dynamixel_info.hpp
+[39.552s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/include/dynamixel_hardware_interface/dynamixel_hardware_interface.hpp
+[39.567s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/include/dynamixel_hardware_interface/visibility_control.h
+[39.589s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/lib/dynamixel_hardware_interface//create_udev_rules
+[39.610s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface//scripts/99-manipulator-cdc.rules
+[39.628s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface//scripts/check_model_file_formatting.py
+[39.643s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface//scripts/cluster_model_files.py
+[39.664s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface//scripts/create_udev_rules
+[39.683s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface//scripts/hx_synctable_model_generator.py
+[39.698s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface//scripts/xml_to_model_parser.py
+[39.727s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/2xc430_w250.model
+[39.738s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/2xl430_w250.model
+[39.753s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/dynamixel.model
+[39.769s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ffw_g10_led.model
+[39.789s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ffw_g10_rcu.model
+[39.809s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ffw_g40_imu.model
+[39.826s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ffw_sg2_drive_1.model
+[39.844s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ffw_sg2_drive_2.model
+[39.862s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ffw_sg2_drive_3.model
+[39.877s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ffw_sg2_steer_1.model
+[39.896s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ffw_sg2_steer_2.model
+[39.911s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ffw_sg2_steer_3.model
+[39.928s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/h42_20_s300_ra.model
+[39.944s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/h54_100_s500_ra.model
+[39.963s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/h54_200_s500_ra.model
+[39.980s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_1_device_1.model
+[39.996s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_1_device_2.model
+[40.014s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_1_device_3.model
+[40.032s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_1_device_4.model
+[40.048s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_1_device_5.model
+[40.069s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_2_device_1.model
+[40.090s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_2_device_2.model
+[40.110s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_2_device_3.model
+[40.126s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_2_device_4.model
+[40.142s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_2_device_5.model
+[40.163s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_3_device_1.model
+[40.179s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_3_device_2.model
+[40.199s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_3_device_3.model
+[40.215s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_3_device_4.model
+[40.234s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_3_device_5.model
+[40.251s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_4_device_1.model
+[40.273s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_4_device_2.model
+[40.289s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_4_device_3.model
+[40.307s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_4_device_4.model
+[40.328s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_4_device_5.model
+[40.349s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_5_device_1.model
+[40.369s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_5_device_2.model
+[40.390s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_5_device_3.model
+[40.409s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_5_device_4.model
+[40.425s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_r_synctable_5_device_5.model
+[40.446s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_rl.model
+[40.464s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/hx5_d20_rr.model
+[40.485s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/m42_10_s260_ra.model
+[40.508s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/m54_40_s250_ra.model
+[40.528s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/m54_60_s250_ra.model
+[40.553s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/mx_106.model
+[40.572s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/mx_28.model
+[40.592s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/mx_64.model
+[40.614s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/omy_end.model
+[40.635s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/omy_end_rh_p12_rn.model
+[40.654s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/omy_hat.model
+[40.672s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ph42_020_s300.model
+[40.692s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ph54_100_s500.model
+[40.715s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ph54_200_s500.model
+[40.745s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/pm42_010_s260.model
+[40.771s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/pm54_040_s250.model
+[40.791s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/pm54_060_s250.model
+[40.809s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/rh_p12_rn.model
+[40.830s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/sensorxel_joy.model
+[40.853s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xc330_m181.model
+[40.873s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xc330_m181_fw52.model
+[40.891s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xc330_m288.model
+[40.909s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xc330_m288_fw52.model
+[40.928s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xc330_t181.model
+[40.947s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xc330_t181_fw52.model
+[40.966s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xc330_t288.model
+[40.983s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xc330_t288_fw52.model
+[41.004s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xc430_w150.model
+[41.022s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xc430_w240.model
+[41.043s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xd430_t210.model
+[41.063s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xd430_t350.model
+[41.082s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xd540_t150.model
+[41.103s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xd540_t270.model
+[41.121s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xh430_v210.model
+[41.141s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xh430_v350.model
+[41.158s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xh430_w210.model
+[41.181s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xh430_w350.model
+[41.202s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xh540_v150.model
+[41.222s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xh540_v270.model
+[41.240s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xh540_w150.model
+[41.265s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xh540_w270.model
+[41.284s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xl320.model
+[41.301s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xl330_m077.model
+[41.320s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xl330_m077_fw52.model
+[41.342s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xl330_m288.model
+[41.360s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xl330_m288_fw52.model
+[41.380s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xl430_w250.model
+[41.399s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xm335_t323.model
+[41.420s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xm335_t332.model
+[41.439s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xm430_w210.model
+[41.459s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xm430_w350.model
+[41.479s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xm540_w150.model
+[41.500s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xm540_w270.model
+[41.516s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xw430_t200.model
+[41.536s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xw430_t333.model
+[41.558s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xw540_h260.model
+[41.577s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xw540_t140.model
+[41.599s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/xw540_t260.model
+[41.617s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ym070_210_a051.model
+[41.637s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ym070_210_a099.model
+[41.656s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ym070_210_b001.model
+[41.676s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ym070_210_m001.model
+[41.698s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ym070_210_r051.model
+[41.718s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ym070_210_r099.model
+[41.737s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ym080_230_a051.model
+[41.757s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ym080_230_a099.model
+[41.772s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ym080_230_b001.model
+[41.787s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ym080_230_m001.model
+[41.803s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ym080_230_r051.model
+[41.819s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/param/dxl_model/ym080_230_r099.model
+[41.834s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/environment/library_path.sh
+[41.851s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/environment/library_path.dsv
+[41.873s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/ament_index/resource_index/package_run_dependencies/dynamixel_hardware_interface
+[41.892s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/ament_index/resource_index/parent_prefix_path/dynamixel_hardware_interface
+[41.911s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/environment/ament_prefix_path.sh
+[41.929s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/environment/ament_prefix_path.dsv
+[41.947s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/environment/path.sh
+[41.969s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/environment/path.dsv
+[41.989s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/local_setup.bash
+[42.007s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/local_setup.sh
+[42.025s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/local_setup.zsh
+[42.041s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/local_setup.dsv
+[42.059s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/package.dsv
+[42.078s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/ament_index/resource_index/packages/dynamixel_hardware_interface
+[42.095s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/dynamixel_hardware_interface
+[42.117s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[42.135s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[42.151s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/cmake/ament_cmake_export_targets-extras.cmake
+[42.167s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[42.185s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/cmake/dynamixel_hardware_interfaceConfig.cmake
+[42.202s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/cmake/dynamixel_hardware_interfaceConfig-version.cmake
+[42.219s] -- Symlinking: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/package.xml
+[42.235s] -- Installing: /home/moveright/omx_ws/install/dynamixel_hardware_interface/lib/libdynamixel_hardware_interface.so
+[42.239s] -- Set non-toolchain portion of runtime path of "/home/moveright/omx_ws/install/dynamixel_hardware_interface/lib/libdynamixel_hardware_interface.so" to ""
+[42.239s] -- Installing: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/cmake/export_dynamixel_hardware_interfaceExport.cmake
+[42.239s] -- Installing: /home/moveright/omx_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/cmake/export_dynamixel_hardware_interfaceExport-release.cmake
+[42.245s] Invoked command in '/home/moveright/omx_ws/build/dynamixel_hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/moveright/omx_ws/install/dynamixel_sdk:/home/moveright/omx_ws/install/dynamixel_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moveright/omx_ws/install/dynamixel_sdk:/home/moveright/omx_ws/install/dynamixel_interfaces:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/moveright/omx_ws/install/dynamixel_sdk/lib:/home/moveright/omx_ws/install/dynamixel_interfaces/lib:/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/lib64 PYTHONPATH=/home/moveright/omx_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/home/moveright/omx_ws/install/dynamixel_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /bin/cmake --install /home/moveright/omx_ws/build/dynamixel_hardware_interface

@@ -1,0 +1,8 @@
+msg/DynamixelState.idl
+msg/DynamixelState.msg
+srv/GetDataFromDxl.idl
+srv/GetDataFromDxl.srv
+srv/RebootDxl.idl
+srv/RebootDxl.srv
+srv/SetDataToDxl.idl
+srv/SetDataToDxl.srv

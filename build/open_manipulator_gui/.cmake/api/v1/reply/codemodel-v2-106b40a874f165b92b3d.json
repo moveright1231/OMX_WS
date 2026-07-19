@@ -1,0 +1,187 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-3b5a667a20b06837f06b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "open_manipulator_gui",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "copy_ui_headers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-copy_ui_headers-Release-364da06a812d46161fe1.json",
+					"name" : "copy_ui_headers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omx_f_gui_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omx_f_gui_node-Release-3c28aabe6250995938a0.json",
+					"name" : "omx_f_gui_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omx_f_gui_node_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omx_f_gui_node_autogen-Release-a2561f3119e6fd079207.json",
+					"name" : "omx_f_gui_node_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omx_f_gui_node_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omx_f_gui_node_autogen_timestamp_deps-Release-63de40d6142cf30b9941.json",
+					"name" : "omx_f_gui_node_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omy_3m_gui_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omy_3m_gui_node-Release-f5abcc0716d67be25a96.json",
+					"name" : "omy_3m_gui_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omy_3m_gui_node_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omy_3m_gui_node_autogen-Release-5fd666d2f0f4c110b9d8.json",
+					"name" : "omy_3m_gui_node_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omy_3m_gui_node_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omy_3m_gui_node_autogen_timestamp_deps-Release-cb9887d6ef48cd7e2c64.json",
+					"name" : "omy_3m_gui_node_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omy_f3m_gui_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omy_f3m_gui_node-Release-fed38e28d5a5a9522553.json",
+					"name" : "omy_f3m_gui_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omy_f3m_gui_node_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omy_f3m_gui_node_autogen-Release-856c552587ee30439465.json",
+					"name" : "omy_f3m_gui_node_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omy_f3m_gui_node_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omy_f3m_gui_node_autogen_timestamp_deps-Release-5857ae7af17713e2ba22.json",
+					"name" : "omy_f3m_gui_node_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "open_manipulator_gui_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-open_manipulator_gui_uninstall-Release-6c3beb9c4d3407e07f25.json",
+					"name" : "open_manipulator_gui_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "open_manipulator_x_gui_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-open_manipulator_x_gui_node-Release-fcfa3539884f12378353.json",
+					"name" : "open_manipulator_x_gui_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "open_manipulator_x_gui_node_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-open_manipulator_x_gui_node_autogen-Release-9c931ae6eb28b8affe4f.json",
+					"name" : "open_manipulator_x_gui_node_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "open_manipulator_x_gui_node_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-open_manipulator_x_gui_node_autogen_timestamp_deps-Release-bebd4c4104a8b322a2e9.json",
+					"name" : "open_manipulator_x_gui_node_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-7f6d6ca37d56f62359f5.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/moveright/omx_ws/build/open_manipulator_gui",
+		"source" : "/home/moveright/omx_ws/src/open_manipulator/open_manipulator_gui"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

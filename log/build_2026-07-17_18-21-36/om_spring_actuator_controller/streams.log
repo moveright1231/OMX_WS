@@ -1,0 +1,92 @@
+[0.032s] Invoking command in '/home/moveright/omx_ws/build/om_spring_actuator_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake /home/moveright/omx_ws/src/open_manipulator/ros2_controller/om_spring_actuator_controller -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/om_spring_actuator_controller
+[1.131s] -- The CXX compiler identification is GNU 11.5.0
+[1.131s] -- Detecting CXX compiler ABI info
+[1.131s] -- Detecting CXX compiler ABI info - done
+[1.131s] -- Check for working CXX compiler: /bin/c++ - skipped
+[1.131s] -- Detecting CXX compile features
+[1.131s] -- Detecting CXX compile features - done
+[1.131s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.131s] -- Found Python3: /bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.131s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.131s] -- Found controller_interface: 4.45.2 (/opt/ros/jazzy/share/controller_interface/cmake)
+[1.131s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.131s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.131s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.131s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.420s] -- Found TinyXML2 via Config file: /lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.516s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.530s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.587s] -- Found TinyXML2 via Config file: /lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.865s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.878s] -- Found TinyXML2 via Config file: /lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.953s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.968s] -- Found TinyXML2 via Config file: /lib/x86_64-linux-gnu/cmake/tinyxml2
+[2.004s] -- Found TinyXML2 via Config file: /lib/x86_64-linux-gnu/cmake/tinyxml2
+[2.036s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.297s] -- Found generate_parameter_library: 0.7.3 (/opt/ros/jazzy/share/generate_parameter_library/cmake)
+[3.316s] -- Found parameter_traits: 0.7.3 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[3.445s] [0mCMake Deprecation Warning at /opt/ros/jazzy/share/tl_expected/cmake/tl_expectedConfig.cmake:37 (message):
+[3.445s]   Package 'tl_expected' is deprecated (This package will be removed in ROS 2
+[3.445s]   Lyrical Luth.
+[3.445s] 
+[3.446s]         Use tl/expected.hpp from libexpected-dev,
+[3.446s]         or rcpputils/tl_expected/expected.hpp if the system header is not available)
+[3.446s] Call Stack (most recent call first):
+[3.446s]   /opt/ros/jazzy/share/parameter_traits/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[3.446s]   /opt/ros/jazzy/share/parameter_traits/cmake/parameter_traitsConfig.cmake:41 (include)
+[3.446s]   /opt/ros/jazzy/share/generate_parameter_library/cmake/generate_parameter_library-extras.cmake:30 (find_package)
+[3.446s]   /opt/ros/jazzy/share/generate_parameter_library/cmake/generate_parameter_libraryConfig.cmake:41 (include)
+[3.446s]   CMakeLists.txt:28 (find_package)
+[3.446s] 
+[3.447s] [0m
+[3.699s] -- Configuring done (3.6s)
+[3.806s] -- Generating done (0.1s)
+[3.814s] -- Build files have been written to: /home/moveright/omx_ws/build/om_spring_actuator_controller
+[3.846s] Invoked command in '/home/moveright/omx_ws/build/om_spring_actuator_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake /home/moveright/omx_ws/src/open_manipulator/ros2_controller/om_spring_actuator_controller -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/om_spring_actuator_controller
+[3.847s] Invoking command in '/home/moveright/omx_ws/build/om_spring_actuator_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --build /home/moveright/omx_ws/build/om_spring_actuator_controller -- -j8 -l8
+[4.069s] [ 25%] [34m[1mRunning `/opt/ros/jazzy/bin/generate_parameter_library_cpp /home/moveright/omx_ws/build/om_spring_actuator_controller/include/om_spring_actuator_controller/spring_actuator_controller_parameters.hpp /home/moveright/omx_ws/src/open_manipulator/ros2_controller/om_spring_actuator_controller/src/spring_actuator_controller_parameters.yaml `[0m
+[4.945s] [ 50%] [34m[1mCreating deprecated header file /home/moveright/omx_ws/build/om_spring_actuator_controller/include/spring_actuator_controller_parameters.hpp[0m
+[4.972s] [ 50%] Built target spring_actuator_controller_parameters
+[5.012s] [ 75%] [32mBuilding CXX object CMakeFiles/spring_actuator_controller.dir/src/spring_actuator_controller.cpp.o[0m
+[12.929s] In file included from [01m[K/opt/ros/jazzy/include/parameter_traits/parameter_traits/parameter_traits.hpp:37[m[K,
+[12.929s]                  from [01m[K/home/moveright/omx_ws/build/om_spring_actuator_controller/include/om_spring_actuator_controller/spring_actuator_controller_parameters.hpp:26[m[K,
+[12.929s]                  from [01m[K/home/moveright/omx_ws/src/open_manipulator/ros2_controller/om_spring_actuator_controller/include/spring_actuator_controller/spring_actuator_controller.hpp:34[m[K,
+[12.929s]                  from [01m[K/home/moveright/omx_ws/src/open_manipulator/ros2_controller/om_spring_actuator_controller/src/spring_actuator_controller.cpp:17[m[K:
+[12.929s] [01m[K/opt/ros/jazzy/include/tl_expected/expected.hpp:18:167:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: tl_expected/expected.hpp is deprecated. Use <tl/expected.hpp> from libexpected-dev, or <rcpputils/tl_expected/expected.hpp> if the system header is not available.[m[K’
+[12.929s]    18 |   "tl_expected/expected.hpp is deprecated. Use <tl/expected.hpp> from libexpected-dev, or <rcpputils/tl_expected/expected.hpp> if the system header is not available."[01;36m[K)[m[K // NOLINT
+[12.929s]       |                                                                                                                                                                       [01;36m[K^[m[K
+[21.033s] [100%] [32m[1mLinking CXX shared library libspring_actuator_controller.so[0m
+[21.938s] [100%] Built target spring_actuator_controller
+[21.986s] Invoked command in '/home/moveright/omx_ws/build/om_spring_actuator_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --build /home/moveright/omx_ws/build/om_spring_actuator_controller -- -j8 -l8
+[21.986s] Invoking command in '/home/moveright/omx_ws/build/om_spring_actuator_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --install /home/moveright/omx_ws/build/om_spring_actuator_controller
+[25.162s] -- Install configuration: "Release"
+[25.163s] -- Execute custom install script
+[25.163s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/include/om_spring_actuator_controller/spring_actuator_controller_parameters.hpp
+[25.163s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller//spring_actuator_plugin.xml
+[25.164s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/include/spring_actuator_controller/spring_actuator_controller/spring_actuator_controller.hpp
+[25.164s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/include/spring_actuator_controller/spring_actuator_controller/visibility_control.h
+[25.164s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/environment/library_path.sh
+[25.164s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/environment/library_path.dsv
+[25.164s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/ament_index/resource_index/package_run_dependencies/om_spring_actuator_controller
+[25.164s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/ament_index/resource_index/parent_prefix_path/om_spring_actuator_controller
+[25.164s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/environment/ament_prefix_path.sh
+[25.164s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/environment/ament_prefix_path.dsv
+[25.165s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/environment/path.sh
+[25.165s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/environment/path.dsv
+[25.165s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/local_setup.bash
+[25.165s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/local_setup.sh
+[25.165s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/local_setup.zsh
+[25.165s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/local_setup.dsv
+[25.165s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/package.dsv
+[25.165s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/ament_index/resource_index/packages/om_spring_actuator_controller
+[25.165s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/om_spring_actuator_controller
+[25.165s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[25.166s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/cmake/ament_cmake_export_targets-extras.cmake
+[25.166s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/cmake/om_spring_actuator_controllerConfig.cmake
+[25.166s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/cmake/om_spring_actuator_controllerConfig-version.cmake
+[25.166s] -- Symlinking: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/package.xml
+[25.166s] -- Installing: /home/moveright/omx_ws/install/om_spring_actuator_controller/lib/libspring_actuator_controller.so
+[25.166s] -- Set non-toolchain portion of runtime path of "/home/moveright/omx_ws/install/om_spring_actuator_controller/lib/libspring_actuator_controller.so" to ""
+[25.166s] -- Installing: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/cmake/export_spring_actuator_controllerExport.cmake
+[25.166s] -- Installing: /home/moveright/omx_ws/install/om_spring_actuator_controller/share/om_spring_actuator_controller/cmake/export_spring_actuator_controllerExport-release.cmake
+[25.176s] Invoked command in '/home/moveright/omx_ws/build/om_spring_actuator_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --install /home/moveright/omx_ws/build/om_spring_actuator_controller

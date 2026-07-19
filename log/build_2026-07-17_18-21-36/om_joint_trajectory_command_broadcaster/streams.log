@@ -1,0 +1,93 @@
+[0.033s] Invoking command in '/home/moveright/omx_ws/build/om_joint_trajectory_command_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake /home/moveright/omx_ws/src/open_manipulator/ros2_controller/om_joint_trajectory_command_broadcaster -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster
+[0.227s] -- The CXX compiler identification is GNU 11.5.0
+[0.254s] -- Detecting CXX compiler ABI info
+[0.432s] -- Detecting CXX compiler ABI info - done
+[0.450s] -- Check for working CXX compiler: /bin/c++ - skipped
+[0.450s] -- Detecting CXX compile features
+[0.450s] -- Detecting CXX compile features - done
+[0.464s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.700s] -- Found Python3: /bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.787s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.891s] -- Found builtin_interfaces: 2.0.4 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[0.971s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.997s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.032s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.063s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.092s] -- Found controller_interface: 4.45.2 (/opt/ros/jazzy/share/controller_interface/cmake)
+[1.423s] -- Found TinyXML2 via Config file: /lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.532s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.544s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.591s] -- Found TinyXML2 via Config file: /lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.882s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.902s] -- Found TinyXML2 via Config file: /lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.964s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.969s] -- Found TinyXML2 via Config file: /lib/x86_64-linux-gnu/cmake/tinyxml2
+[2.003s] -- Found TinyXML2 via Config file: /lib/x86_64-linux-gnu/cmake/tinyxml2
+[2.042s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.301s] -- Found generate_parameter_library: 0.7.3 (/opt/ros/jazzy/share/generate_parameter_library/cmake)
+[3.318s] -- Found parameter_traits: 0.7.3 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[3.484s] [0mCMake Deprecation Warning at /opt/ros/jazzy/share/tl_expected/cmake/tl_expectedConfig.cmake:37 (message):
+[3.485s]   Package 'tl_expected' is deprecated (This package will be removed in ROS 2
+[3.485s]   Lyrical Luth.
+[3.485s] 
+[3.485s]         Use tl/expected.hpp from libexpected-dev,
+[3.485s]         or rcpputils/tl_expected/expected.hpp if the system header is not available)
+[3.485s] Call Stack (most recent call first):
+[3.485s]   /opt/ros/jazzy/share/parameter_traits/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[3.485s]   /opt/ros/jazzy/share/parameter_traits/cmake/parameter_traitsConfig.cmake:41 (include)
+[3.485s]   /opt/ros/jazzy/share/generate_parameter_library/cmake/generate_parameter_library-extras.cmake:30 (find_package)
+[3.485s]   /opt/ros/jazzy/share/generate_parameter_library/cmake/generate_parameter_libraryConfig.cmake:41 (include)
+[3.486s]   CMakeLists.txt:31 (find_package)
+[3.486s] 
+[3.486s] [0m
+[3.768s] -- Configuring done (3.7s)
+[3.829s] -- Generating done (0.0s)
+[3.844s] -- Build files have been written to: /home/moveright/omx_ws/build/om_joint_trajectory_command_broadcaster
+[3.859s] Invoked command in '/home/moveright/omx_ws/build/om_joint_trajectory_command_broadcaster' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake /home/moveright/omx_ws/src/open_manipulator/ros2_controller/om_joint_trajectory_command_broadcaster -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster
+[3.859s] Invoking command in '/home/moveright/omx_ws/build/om_joint_trajectory_command_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --build /home/moveright/omx_ws/build/om_joint_trajectory_command_broadcaster -- -j8 -l8
+[5.037s] [ 25%] [34m[1mRunning `/opt/ros/jazzy/bin/generate_parameter_library_cpp /home/moveright/omx_ws/build/om_joint_trajectory_command_broadcaster/include/om_joint_trajectory_command_broadcaster/joint_trajectory_command_broadcaster_parameters.hpp /home/moveright/omx_ws/src/open_manipulator/ros2_controller/om_joint_trajectory_command_broadcaster/src/joint_trajectory_command_broadcaster_parameters.yaml `[0m
+[5.046s] [ 50%] [34m[1mCreating deprecated header file /home/moveright/omx_ws/build/om_joint_trajectory_command_broadcaster/include/joint_trajectory_command_broadcaster_parameters.hpp[0m
+[5.076s] [ 50%] Built target joint_trajectory_command_broadcaster_parameters
+[5.112s] [ 75%] [32mBuilding CXX object CMakeFiles/joint_trajectory_command_broadcaster.dir/src/joint_trajectory_command_broadcaster.cpp.o[0m
+[13.583s] In file included from [01m[K/opt/ros/jazzy/include/parameter_traits/parameter_traits/parameter_traits.hpp:37[m[K,
+[13.584s]                  from [01m[K/home/moveright/omx_ws/build/om_joint_trajectory_command_broadcaster/include/om_joint_trajectory_command_broadcaster/joint_trajectory_command_broadcaster_parameters.hpp:26[m[K,
+[13.584s]                  from [01m[K/home/moveright/omx_ws/src/open_manipulator/ros2_controller/om_joint_trajectory_command_broadcaster/include/joint_trajectory_command_broadcaster/joint_trajectory_command_broadcaster.hpp:28[m[K,
+[13.584s]                  from [01m[K/home/moveright/omx_ws/src/open_manipulator/ros2_controller/om_joint_trajectory_command_broadcaster/src/joint_trajectory_command_broadcaster.cpp:15[m[K:
+[13.584s] [01m[K/opt/ros/jazzy/include/tl_expected/expected.hpp:18:167:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: tl_expected/expected.hpp is deprecated. Use <tl/expected.hpp> from libexpected-dev, or <rcpputils/tl_expected/expected.hpp> if the system header is not available.[m[K’
+[13.584s]    18 |   "tl_expected/expected.hpp is deprecated. Use <tl/expected.hpp> from libexpected-dev, or <rcpputils/tl_expected/expected.hpp> if the system header is not available."[01;36m[K)[m[K // NOLINT
+[13.584s]       |                                                                                                                                                                       [01;36m[K^[m[K
+[54.861s] [100%] [32m[1mLinking CXX shared library libjoint_trajectory_command_broadcaster.so[0m
+[55.409s] [100%] Built target joint_trajectory_command_broadcaster
+[55.498s] Invoked command in '/home/moveright/omx_ws/build/om_joint_trajectory_command_broadcaster' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --build /home/moveright/omx_ws/build/om_joint_trajectory_command_broadcaster -- -j8 -l8
+[55.501s] Invoking command in '/home/moveright/omx_ws/build/om_joint_trajectory_command_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --install /home/moveright/omx_ws/build/om_joint_trajectory_command_broadcaster
+[55.537s] -- Install configuration: "Release"
+[55.537s] -- Execute custom install script
+[55.538s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/include/om_joint_trajectory_command_broadcaster/joint_trajectory_command_broadcaster_parameters.hpp
+[55.579s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster//joint_trajectory_command_plugin.xml
+[55.620s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/include/joint_trajectory_command_broadcaster/joint_trajectory_command_broadcaster/joint_trajectory_command_broadcaster.hpp
+[55.666s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/include/joint_trajectory_command_broadcaster/joint_trajectory_command_broadcaster/visibility_control.h
+[55.720s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/environment/library_path.sh
+[55.771s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/environment/library_path.dsv
+[55.823s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/ament_index/resource_index/package_run_dependencies/om_joint_trajectory_command_broadcaster
+[55.878s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/ament_index/resource_index/parent_prefix_path/om_joint_trajectory_command_broadcaster
+[55.925s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/environment/ament_prefix_path.sh
+[55.979s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/environment/ament_prefix_path.dsv
+[56.030s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/environment/path.sh
+[56.095s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/environment/path.dsv
+[56.123s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/local_setup.bash
+[56.144s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/local_setup.sh
+[56.170s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/local_setup.zsh
+[56.194s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/local_setup.dsv
+[56.239s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/package.dsv
+[56.295s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/ament_index/resource_index/packages/om_joint_trajectory_command_broadcaster
+[56.330s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/ament_index/resource_index/controller_interface__pluginlib__plugin/om_joint_trajectory_command_broadcaster
+[56.373s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/cmake/ament_cmake_export_dependencies-extras.cmake
+[56.421s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/cmake/ament_cmake_export_targets-extras.cmake
+[56.475s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/cmake/om_joint_trajectory_command_broadcasterConfig.cmake
+[56.528s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/cmake/om_joint_trajectory_command_broadcasterConfig-version.cmake
+[56.577s] -- Symlinking: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/package.xml
+[56.613s] -- Installing: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/lib/libjoint_trajectory_command_broadcaster.so
+[56.621s] -- Set non-toolchain portion of runtime path of "/home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/lib/libjoint_trajectory_command_broadcaster.so" to ""
+[56.621s] -- Installing: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/cmake/export_joint_trajectory_command_broadcasterExport.cmake
+[56.622s] -- Installing: /home/moveright/omx_ws/install/om_joint_trajectory_command_broadcaster/share/om_joint_trajectory_command_broadcaster/cmake/export_joint_trajectory_command_broadcasterExport-release.cmake
+[56.633s] Invoked command in '/home/moveright/omx_ws/build/om_joint_trajectory_command_broadcaster' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --install /home/moveright/omx_ws/build/om_joint_trajectory_command_broadcaster

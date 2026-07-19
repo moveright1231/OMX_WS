@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/moveright/omx_ws/build/open_manipulator_gui/open_manipulator_x_gui_node" "TARGETS" "open_manipulator_x_gui_node" "DESTINATION" "lib/open_manipulator_gui")

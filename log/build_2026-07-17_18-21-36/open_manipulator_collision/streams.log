@@ -1,0 +1,70 @@
+[0.049s] Invoking command in '/home/moveright/omx_ws/build/open_manipulator_collision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake /home/moveright/omx_ws/src/open_manipulator/open_manipulator_collision -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/open_manipulator_collision
+[1.358s] -- The C compiler identification is GNU 11.5.0
+[1.358s] -- The CXX compiler identification is GNU 11.5.0
+[1.358s] -- Detecting C compiler ABI info
+[1.359s] -- Detecting C compiler ABI info - done
+[1.359s] -- Check for working C compiler: /bin/cc - skipped
+[1.359s] -- Detecting C compile features
+[1.359s] -- Detecting C compile features - done
+[1.359s] -- Detecting CXX compiler ABI info
+[1.360s] -- Detecting CXX compiler ABI info - done
+[1.360s] -- Check for working CXX compiler: /bin/c++ - skipped
+[1.361s] -- Detecting CXX compile features
+[1.361s] -- Detecting CXX compile features - done
+[1.361s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.361s] -- Found Python3: /bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.361s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.361s] -- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.361s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.361s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.361s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.361s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.361s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.361s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.508s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.570s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.655s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.014s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.073s] -- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[2.329s] -- Found visualization_msgs: 5.3.8 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[2.445s] -- Found kdl_parser: 2.11.0 (/opt/ros/jazzy/share/kdl_parser/cmake)
+[2.489s] -- Found eigen3_cmake_module: 0.3.1 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[2.489s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.489s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.522s] -- Found urdf: 2.10.1 (/opt/ros/jazzy/share/urdf/cmake)
+[2.954s] -- Configuring done (2.9s)
+[3.064s] -- Generating done (0.1s)
+[3.088s] -- Build files have been written to: /home/moveright/omx_ws/build/open_manipulator_collision
+[3.209s] Invoked command in '/home/moveright/omx_ws/build/open_manipulator_collision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake /home/moveright/omx_ws/src/open_manipulator/open_manipulator_collision -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/moveright/omx_ws/install/open_manipulator_collision
+[3.209s] Invoking command in '/home/moveright/omx_ws/build/open_manipulator_collision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --build /home/moveright/omx_ws/build/open_manipulator_collision -- -j8 -l8
+[3.851s] [ 50%] [32mBuilding CXX object CMakeFiles/self_collision_node.dir/src/self_collision_node.cpp.o[0m
+[59.596s] [100%] [32m[1mLinking CXX executable self_collision_node[0m
+[60.126s] [100%] Built target self_collision_node
+[60.199s] Invoked command in '/home/moveright/omx_ws/build/open_manipulator_collision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --build /home/moveright/omx_ws/build/open_manipulator_collision -- -j8 -l8
+[60.201s] Invoking command in '/home/moveright/omx_ws/build/open_manipulator_collision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --install /home/moveright/omx_ws/build/open_manipulator_collision
+[60.226s] -- Install configuration: "Release"
+[60.226s] -- Execute custom install script
+[60.228s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/lib/open_manipulator_collision/self_collision_node
+[60.266s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/include//open_manipulator_collision/self_collision_node.hpp
+[60.297s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/self_collision.launch.py
+[60.323s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/environment/library_path.sh
+[60.347s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/environment/library_path.dsv
+[60.383s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/ament_index/resource_index/package_run_dependencies/open_manipulator_collision
+[60.417s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/ament_index/resource_index/parent_prefix_path/open_manipulator_collision
+[60.450s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/environment/ament_prefix_path.sh
+[60.474s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/environment/ament_prefix_path.dsv
+[60.493s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/environment/path.sh
+[60.512s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/environment/path.dsv
+[60.532s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/local_setup.bash
+[60.554s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/local_setup.sh
+[60.574s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/local_setup.zsh
+[60.596s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/local_setup.dsv
+[60.614s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/package.dsv
+[60.634s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/ament_index/resource_index/packages/open_manipulator_collision
+[60.662s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/cmake/ament_cmake_export_dependencies-extras.cmake
+[60.699s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/cmake/ament_cmake_export_include_directories-extras.cmake
+[60.750s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/cmake/ament_cmake_export_libraries-extras.cmake
+[60.796s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/cmake/open_manipulator_collisionConfig.cmake
+[60.828s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/cmake/open_manipulator_collisionConfig-version.cmake
+[60.865s] -- Symlinking: /home/moveright/omx_ws/install/open_manipulator_collision/share/open_manipulator_collision/package.xml
+[60.923s] Invoked command in '/home/moveright/omx_ws/build/open_manipulator_collision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /bin/cmake --install /home/moveright/omx_ws/build/open_manipulator_collision

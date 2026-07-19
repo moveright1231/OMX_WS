@@ -1,0 +1,1 @@
+/home/moveright/omx_ws/build/om_joint_trajectory_command_broadcaster/ament_cmake_core/om_joint_trajectory_command_broadcasterConfig-version.cmake

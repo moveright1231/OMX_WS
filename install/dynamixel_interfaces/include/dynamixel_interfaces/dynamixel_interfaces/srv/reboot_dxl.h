@@ -1,0 +1,1 @@
+/home/moveright/omx_ws/build/dynamixel_interfaces/rosidl_generator_c/dynamixel_interfaces/srv/reboot_dxl.h

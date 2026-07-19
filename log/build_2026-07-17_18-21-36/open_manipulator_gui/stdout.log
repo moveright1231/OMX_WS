@@ -1,0 +1,174 @@
+-- The C compiler identification is GNU 11.5.0
+-- The CXX compiler identification is GNU 11.5.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found moveit_msgs: 2.6.0 (/opt/ros/jazzy/share/moveit_msgs/cmake)
+-- Found moveit_ros_planning: 2.12.4 (/opt/ros/jazzy/share/moveit_ros_planning/cmake)
+-- Found Boost: /lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+-- Found parameter_traits: 0.7.3 (/opt/ros/jazzy/share/parameter_traits/cmake)
+-- Found rclcpp_lifecycle: 28.1.21 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+-- Found Boost: /lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found moveit_ros_planning_interface: 2.12.4 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)
+-- Found Boost: /lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+-- Found Boost: /lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+-- Found Boost: /lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+-- Configuring done (6.6s)
+-- Generating done (0.3s)
+-- Build files have been written to: /home/moveright/omx_ws/build/open_manipulator_gui
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found moveit_msgs: 2.6.0 (/opt/ros/jazzy/share/moveit_msgs/cmake)
+-- Found moveit_ros_planning: 2.12.4 (/opt/ros/jazzy/share/moveit_ros_planning/cmake)
+-- Found Boost: /lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+-- Found parameter_traits: 0.7.3 (/opt/ros/jazzy/share/parameter_traits/cmake)
+-- Found rclcpp_lifecycle: 28.1.21 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+-- Found Boost: /lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found moveit_ros_planning_interface: 2.12.4 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)
+-- Found Boost: /lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+-- Found Boost: /lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+-- Found Boost: /lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+-- Configuring done (2.6s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/moveright/omx_ws/build/open_manipulator_gui
+[  1%] [34m[1mGenerating ui_omy_3m_main_window.h[0m
+[  5%] [34m[1mGenerating ui_open_manipulator_x_main_window.h[0m
+[  5%] [34m[1mGenerating ui_omx_f_main_window.h[0m
+[  7%] [34m[1mGenerating ui_omy_f3m_main_window.h[0m
+[  8%] [34m[1mGenerating omx_f_gui/ui_omx_f_main_window.h[0m
+[ 10%] [34m[1mGenerating omy_f3m_gui/ui_omy_f3m_main_window.h[0m
+[ 12%] [34m[1mGenerating open_manipulator_x_gui/ui_open_manipulator_x_main_window.h[0m
+[ 14%] [34m[1mGenerating omy_3m_gui/ui_omy_3m_main_window.h[0m
+[ 14%] Built target copy_ui_headers
+[ 14%] Built target omy_3m_gui_node_autogen_timestamp_deps
+[ 14%] Built target open_manipulator_x_gui_node_autogen_timestamp_deps
+[ 14%] Built target omx_f_gui_node_autogen_timestamp_deps
+[ 14%] Built target omy_f3m_gui_node_autogen_timestamp_deps
+[ 16%] [34m[1mAutomatic MOC and UIC for target omy_3m_gui_node[0m
+[ 17%] [34m[1mAutomatic MOC and UIC for target open_manipulator_x_gui_node[0m
+[ 19%] [34m[1mAutomatic MOC and UIC for target omx_f_gui_node[0m
+[ 21%] [34m[1mAutomatic MOC and UIC for target omy_f3m_gui_node[0m
+[ 21%] Built target omy_3m_gui_node_autogen
+[ 21%] Built target omx_f_gui_node_autogen
+[ 23%] [34m[1mGenerating include/omy_3m_gui/moc_qnode.cpp[0m
+[ 25%] [34m[1mGenerating include/omy_3m_gui/moc_main_window.cpp[0m
+[ 25%] Built target open_manipulator_x_gui_node_autogen
+[ 26%] [34m[1mGenerating include/omx_f_gui/moc_main_window.cpp[0m
+[ 28%] [34m[1mGenerating include/omx_f_gui/moc_qnode.cpp[0m
+[ 30%] [34m[1mGenerating include/open_manipulator_x_gui/moc_main_window.cpp[0m
+[ 32%] [34m[1mGenerating include/open_manipulator_x_gui/moc_qnode.cpp[0m
+[ 32%] Built target omy_f3m_gui_node_autogen
+[ 33%] [34m[1mGenerating include/omy_f3m_gui/moc_main_window.cpp[0m
+[ 35%] [34m[1mGenerating include/omy_f3m_gui/moc_qnode.cpp[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/omy_3m_gui_node.dir/src/omy_3m/main.cpp.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/omy_3m_gui_node.dir/include/omy_3m_gui/moc_main_window.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/omy_3m_gui_node.dir/omy_3m_gui_node_autogen/mocs_compilation.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/omy_3m_gui_node.dir/src/omy_3m/main_window.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/omy_3m_gui_node.dir/src/omy_3m/qnode.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/omx_f_gui_node.dir/omx_f_gui_node_autogen/mocs_compilation.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_gui_node.dir/open_manipulator_x_gui_node_autogen/mocs_compilation.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/omy_3m_gui_node.dir/include/omy_3m_gui/moc_qnode.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_gui_node.dir/src/open_manipulator_x/main.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/omx_f_gui_node.dir/src/omx_f/main.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/omy_f3m_gui_node.dir/omy_f3m_gui_node_autogen/mocs_compilation.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/omy_f3m_gui_node.dir/src/omy_f3m/main.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_gui_node.dir/src/open_manipulator_x/main_window.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/omy_f3m_gui_node.dir/src/omy_f3m/main_window.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/omx_f_gui_node.dir/include/omx_f_gui/moc_main_window.cpp.o[0m
+[ 64%] [32m[1mLinking CXX executable omy_3m_gui_node[0m
+[ 67%] Built target omy_3m_gui_node
+[ 69%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_gui_node.dir/include/open_manipulator_x_gui/moc_main_window.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/omy_f3m_gui_node.dir/src/omy_f3m/qnode.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/omx_f_gui_node.dir/include/omx_f_gui/moc_qnode.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_gui_node.dir/include/open_manipulator_x_gui/moc_qnode.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/omx_f_gui_node.dir/src/omx_f/qnode.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/omy_f3m_gui_node.dir/include/omy_f3m_gui/moc_qnode.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_gui_node.dir/src/open_manipulator_x/qnode.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/omy_f3m_gui_node.dir/include/omy_f3m_gui/moc_main_window.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/omx_f_gui_node.dir/src/omx_f/main_window.cpp.o[0m
+[ 85%] [32m[1mLinking CXX executable open_manipulator_x_gui_node[0m
+[ 89%] Built target open_manipulator_x_gui_node
+[ 91%] [32m[1mLinking CXX executable omy_f3m_gui_node[0m
+[ 94%] Built target omy_f3m_gui_node
+[ 96%] [32m[1mLinking CXX executable omx_f_gui_node[0m
+[100%] Built target omx_f_gui_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/lib/open_manipulator_gui/open_manipulator_x_gui_node
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/lib/open_manipulator_gui/omy_3m_gui_node
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/lib/open_manipulator_gui/omy_f3m_gui_node
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/lib/open_manipulator_gui/omx_f_gui_node
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/include/omx_f_gui/main_window.hpp
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/include/omx_f_gui/qnode.hpp
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/include/omy_3m_gui/main_window.hpp
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/include/omy_3m_gui/qnode.hpp
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/include/omy_f3m_gui/main_window.hpp
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/include/omy_f3m_gui/qnode.hpp
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/include/open_manipulator_x_gui/main_window.hpp
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/include/open_manipulator_x_gui/qnode.hpp
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/launch/omx_f_gui.launch.py
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/launch/omy_3m_gui.launch.py
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/launch/omy_f3m_gui.launch.py
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/launch/open_manipulator_x_gui.launch.py
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/ui/omx_f_main_window.ui
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/ui/omy_3m_main_window.ui
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/ui/omy_f3m_main_window.ui
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/ui/open_manipulator_x_main_window.ui
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/config/omx_f_joint_log.csv
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/config/omy_3m_joint_log.csv
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/config/omy_f3m_joint_log.csv
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/config/open_manipulator_x_joint_log.csv
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/environment/library_path.sh
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/environment/library_path.dsv
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/ament_index/resource_index/package_run_dependencies/open_manipulator_gui
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/ament_index/resource_index/parent_prefix_path/open_manipulator_gui
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/environment/ament_prefix_path.sh
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/environment/ament_prefix_path.dsv
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/environment/path.sh
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/environment/path.dsv
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/local_setup.bash
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/local_setup.sh
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/local_setup.zsh
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/local_setup.dsv
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/package.dsv
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/ament_index/resource_index/packages/open_manipulator_gui
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/cmake/open_manipulator_guiConfig.cmake
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/cmake/open_manipulator_guiConfig-version.cmake
+-- Symlinking: /home/moveright/omx_ws/install/open_manipulator_gui/share/open_manipulator_gui/package.xml
