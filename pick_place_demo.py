@@ -168,10 +168,13 @@ class PickPlaceDemo:
         print(f'큐브 스폰: ({self.args.cube_x}, {self.args.cube_y}), 크기 {self.args.cube_size}m')
 
         # 큐브 pose를 ROS로 가져오는 브릿지 (스크립트 종료 시 함께 종료)
+        # start_new_session: 종료 시 wrapper(ros2 run)만 죽고 실제 브릿지가
+        # 좀비로 남는 것을 막기 위해 프로세스 그룹째 kill한다 (cleanup 참고)
         self.bridge_proc = subprocess.Popen(
             ['ros2', 'run', 'ros_gz_bridge', 'parameter_bridge',
              f'/model/{self.cube_name}/pose@geometry_msgs/msg/PoseStamped[gz.msgs.Pose'],
             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+            start_new_session=True,
         )
 
     def spawn_pillar(self, px, py):
@@ -402,7 +405,12 @@ class PickPlaceDemo:
 
     def cleanup(self):
         if self.bridge_proc:
-            self.bridge_proc.terminate()
+            import os
+            import signal
+            try:
+                os.killpg(os.getpgid(self.bridge_proc.pid), signal.SIGTERM)
+            except ProcessLookupError:
+                pass
 
 
 def parse_args():
