@@ -1,0 +1,22 @@
+[project]
+name = "omx-demos"
+version = "0.1.0"
+description = "OM-X 시뮬레이션 데모 스크립트 (텔레옵 / MoveIt2 / 비전 pick & place)"
+requires-python = "==3.12.*"
+dependencies = [
+    # ROS Jazzy의 cv_bridge C 확장이 numpy 1.x ABI로 빌드됨 — 2.x 금지
+    "numpy>=1.26,<2",
+    "opencv-python>=4.6",
+    # rclpy 등 ROS 패키지가 요구하는 순수 파이썬 의존성
+    # (시스템에는 apt로 있지만 venv에는 따로 필요)
+    "pyyaml>=6.0",
+]
+
+[tool.uv]
+# 스크립트 모음이라 프로젝트 자체를 패키지로 빌드/설치하지 않음
+package = false
+
+# 주의: rclpy, cv_bridge, pymoveit2, *_msgs 등 ROS 파이썬 패키지는 PyPI에 없다.
+# ROS 환경 소싱(setup.bash)이 PYTHONPATH로 주입하므로, 실행 전 반드시:
+#   source /opt/ros/jazzy/setup.bash && source install/setup.bash
+# 그 다음 uv run으로 실행 (자세한 사용법은 CLAUDE.md / WORKLOG.md).

@@ -84,6 +84,7 @@ class VisionPick:
         # 큐브 실제 pose → Foxglove용 /cube_marker 중계 (콜백은 격리된 cam_node에)
         qos = QoSProfile(depth=1, durability=DurabilityPolicy.TRANSIENT_LOCAL)
         self.cube_marker_pub = self.cam_node.create_publisher(Marker, '/cube_marker', qos)
+        self.pillar_marker_pub = self.cam_node.create_publisher(Marker, '/obstacle_marker', qos)
         self.cam_node.create_subscription(
             PoseStamped, '/model/pick_cube/pose', self.cube_pose_cb, 10)
         self.pose_bridge = subprocess.Popen(
@@ -157,23 +158,31 @@ class VisionPick:
         비동기 렌더가 놓칠 수 있음 → 공중에서 떨어뜨려(낙하 동안 연속 pose 변경)
         렌더 반영을 강제하고, 검출값이 명령 위치와 일치할 때까지 확인한다."""
         drop_z = 0.06
+        # set_pose는 없는 모델에도 'data: true'를 반환(요청 접수일 뿐)하므로
+        # 존재 여부는 모델 목록으로 직접 확인해야 한다
+        models = subprocess.run(['gz', 'model', '--list'],
+                                capture_output=True, text=True, timeout=10).stdout
+        cube_exists = 'pick_cube' in models
         for attempt in range(3):
-            pose_req = f'name: "pick_cube" position {{x: {x} y: {y} z: {drop_z}}}'
-            moved = subprocess.run(
-                ['gz', 'service', '-s', '/world/empty/set_pose',
-                 '--reqtype', 'gz.msgs.Pose', '--reptype', 'gz.msgs.Boolean',
-                 '--timeout', '2000', '--req', pose_req],
-                capture_output=True, text=True)
-            if 'data: true' not in moved.stdout:
-                # 큐브가 없음 → 생성 (역시 낙하 방식)
+            if not cube_exists:
                 subprocess.run(
                     ['ros2', 'run', 'ros_gz_sim', 'create',
                      '-string', cube_sdf('pick_cube', self.args.cube_size),
                      '-name', 'pick_cube', '-x', str(x), '-y', str(y), '-z', str(drop_z)],
                     capture_output=True, text=True, timeout=15)
-                print('큐브 최초 생성')
+                print('큐브 최초 생성 (엔티티 추가는 센서 반영이 느릴 수 있음)')
+                cube_exists = True
+                wait_s = 30  # 엔티티 추가는 렌더 씬 반영이 수십 초 걸릴 수 있음
+            else:
+                pose_req = f'name: "pick_cube" position {{x: {x} y: {y} z: {drop_z}}}'
+                subprocess.run(
+                    ['gz', 'service', '-s', '/world/empty/set_pose',
+                     '--reqtype', 'gz.msgs.Pose', '--reptype', 'gz.msgs.Boolean',
+                     '--timeout', '2000', '--req', pose_req],
+                    capture_output=True, text=True)
+                wait_s = 10
             # 검출값이 명령 위치 3cm 이내로 들어올 때까지 대기
-            deadline = time.time() + 10
+            deadline = time.time() + wait_s
             while time.time() < deadline:
                 self.check_frames_alive()
                 est = self.blob_estimate(H, cam_pos)
@@ -200,10 +209,82 @@ class VisionPick:
         goal.command.max_effort = 5.0
         self.gripper_client.wait_for_server(timeout_sec=3.0)
         future = self.gripper_client.send_goal_async(goal)
-        rclpy.spin_until_future_complete(self.node, future, timeout_sec=3.0)
+        # 주의: rclpy.spin_until_future_complete를 쓰면 백그라운드 executor와
+        # 같은 노드를 이중 spin하게 되어 wait set 경쟁으로 executor가 죽음.
+        # 콜백 처리는 executor가 하므로 future 완료만 기다린다.
+        deadline = time.time() + 3.0
+        while not future.done() and time.time() < deadline:
+            time.sleep(0.05)
         time.sleep(1.0)
 
-    def pick(self, cx, cy):
+    def gz_remove(self, name):
+        subprocess.run(
+            ['gz', 'service', '-s', '/world/empty/remove',
+             '--reqtype', 'gz.msgs.Entity', '--reptype', 'gz.msgs.Boolean',
+             '--timeout', '2000', '--req', f'name: "{name}" type: MODEL'],
+            capture_output=True)
+
+    def spawn_pillar(self, ox, oy):
+        """기둥을 Gazebo 실물(static) + MoveIt planning scene + Foxglove 마커로 추가"""
+        a = self.args
+        h, w = a.pillar_height, a.pillar_width
+        sdf = f"""<?xml version="1.0"?>
+<sdf version="1.8">
+  <model name="pillar"><static>true</static><link name="link">
+    <collision name="c"><geometry><box><size>{w} {w} {h}</size></box></geometry></collision>
+    <visual name="v"><geometry><box><size>{w} {w} {h}</size></box></geometry>
+      <material><ambient>1 0.3 0.1 1</ambient><diffuse>1 0.3 0.1 1</diffuse></material>
+    </visual></link></model></sdf>"""
+        subprocess.run(
+            ['ros2', 'run', 'ros_gz_sim', 'create', '-string', sdf, '-name', 'pillar',
+             '-x', str(ox), '-y', str(oy), '-z', str(h / 2)],
+            capture_output=True, text=True, timeout=15)
+        self.moveit2.add_collision_box(
+            id='pillar', size=[w, w, h], position=[ox, oy, h / 2],
+            quat_xyzw=[0.0, 0.0, 0.0, 1.0], frame_id='world')
+        m = Marker()
+        m.header.frame_id = 'world'
+        m.ns, m.id = 'obstacle', 0
+        m.type, m.action = Marker.CUBE, Marker.ADD
+        m.pose.position.x, m.pose.position.y, m.pose.position.z = ox, oy, h / 2
+        m.pose.orientation.w = 1.0
+        m.scale.x, m.scale.y, m.scale.z = w, w, h
+        m.color.r, m.color.g, m.color.b, m.color.a = 1.0, 0.3, 0.1, 0.8
+        self.pillar_marker_pub.publish(m)
+        print(f'기둥 스폰: ({ox:.3f}, {oy:.3f}), 크기 {w}x{w}x{h}m')
+        time.sleep(1.0)  # planning scene 반영 대기
+
+    @staticmethod
+    def ang_diff(a, b):
+        return abs(math.atan2(math.sin(a - b), math.cos(a - b)))
+
+    def sample_pillar_pos(self, cx, cy):
+        """체커보드 위 무작위 기둥 위치.
+        벌린 그리퍼 폭(±4cm) 때문에 집기 '방향' 부채꼴과 0.5rad 이상 분리 필요.
+        반경 0.19 이상: 안쪽 접기 운반 통로(r=0.13) 확보."""
+        cube_ang = math.atan2(cy, cx)
+        for _ in range(500):
+            ox = random.uniform(0.08, 0.33)
+            oy = random.uniform(-0.11, 0.11)
+            if (0.19 <= math.hypot(ox, oy) <= 0.32
+                    and self.ang_diff(math.atan2(oy, ox), cube_ang) >= 0.5
+                    and math.hypot(ox - cx, oy - cy) >= 0.10):
+                return ox, oy
+        raise RuntimeError('기둥 위치 샘플링 실패 — 큐브를 다른 위치로 옮겨보세요')
+
+    def choose_place_angle(self, cube_ang, pillar_ang=None):
+        """놓기 각도 선택: 기둥이 있으면 기둥 방향과 0.5rad 이상 분리되는
+        후보를 고른다 (놓기 각도를 고정하면 제외 구역이 보드를 다 덮어버림)"""
+        candidates = [cube_ang + d for d in
+                      (-1.0, -1.2, -1.4, 1.0, 1.2, 1.4, -0.8, 0.8)]
+        for ang in candidates:
+            if abs(ang) > 2.9:  # joint1 한계 여유
+                continue
+            if pillar_ang is None or self.ang_diff(ang, pillar_ang) >= 0.5:
+                return ang
+        raise RuntimeError('놓기 각도 선택 실패')
+
+    def pick(self, cx, cy, place_ang):
         a = self.args
         r = math.hypot(cx, cy)
         depth = (r + a.grasp_depth) / r
@@ -211,20 +292,58 @@ class VisionPick:
         pitch = 0.4
         touch = (a.cube_size - 0.042) / 2
         close_pos = max(touch - 0.001, -0.011)
+        carry_h = a.grasp_z + 0.07
+        cube_angle = math.atan2(cy, cx)
+        px_, py_ = r * math.cos(place_ang), r * math.sin(place_ang)
 
         self.set_gripper(GRIPPER_OPEN)
         self.move_joints(ik(cx * 0.8, cy * 0.8, a.grasp_z + 0.05, pitch), '접근')
         self.move_joints(ik(gx, gy, a.grasp_z, pitch), '집기 위치')
         self.set_gripper(close_pos)
-        self.move_joints(ik(gx, gy, a.grasp_z + 0.07, pitch), '들어올리기')
-        # 놓기: 베이스를 -1.0rad 회전한 위치
-        ang = math.atan2(cy, cx) - 1.0
-        px_, py_ = r * math.cos(ang), r * math.sin(ang)
-        self.move_joints(ik(px_, py_, a.grasp_z + 0.07, pitch), '이동')
+
+        # 큐브를 그리퍼에 attach → 운반 중 큐브-기둥 충돌도 회피 대상
+        self.moveit2.add_collision_box(
+            id='cube', size=[a.cube_size] * 3,
+            position=[cx, cy, a.cube_size / 2], quat_xyzw=[0.0, 0.0, 0.0, 1.0],
+            frame_id='world')
+        time.sleep(0.3)
+        self.moveit2.attach_collision_object(
+            id='cube', link_name='end_effector_link',
+            touch_links=['gripper_left_link', 'gripper_right_link',
+                         'link5', 'end_effector_link'])
+        time.sleep(0.5)
+
+        self.move_joints(ik(gx, gy, carry_h, pitch), '들어올리기')
+
+        if a.pillar:
+            # 기둥 회피: 팔을 안쪽으로 접어(r=0.13) 기둥 반경 안쪽으로 회전
+            # (MoveIt 자유 플래닝은 elbow flip으로 큐브를 놓칠 수 있음)
+            r_in = 0.13
+            delta = math.atan2(math.sin(place_ang - cube_angle),
+                               math.cos(place_ang - cube_angle))
+            self.move_joints(
+                ik(r_in * math.cos(cube_angle), r_in * math.sin(cube_angle),
+                   carry_h, pitch), '안쪽으로 접기')
+            n_steps = max(2, math.ceil(abs(delta) / 0.35))
+            for i in range(1, n_steps + 1):
+                a_i = cube_angle + delta * i / n_steps
+                self.move_joints(
+                    ik(r_in * math.cos(a_i), r_in * math.sin(a_i), carry_h, pitch),
+                    f'회피 회전 {i}/{n_steps}')
+            self.move_joints(ik(px_, py_, carry_h, pitch), '뻗기')
+        else:
+            self.move_joints(ik(px_, py_, carry_h, pitch), '이동')
+
         self.move_joints(ik(px_, py_, a.grasp_z + 0.005, pitch), '내려놓기')
+        self.moveit2.detach_collision_object('cube')
+        time.sleep(0.5)
+        # 반만 열기 — 활짝 열면 손가락이 근처 기둥과 충돌 판정될 수 있음
         self.set_gripper(min(touch + 0.006, GRIPPER_OPEN))
-        self.move_joints(ik(px_, py_, a.grasp_z + 0.07, pitch), '후퇴')
-        self.move_joints([0.0, 0.0, 0.0, 0.0], '원위치')
+        self.move_joints(ik(px_, py_, carry_h, pitch), '후퇴')
+        self.moveit2.remove_collision_object('cube')
+        # 홈([0,0,0,0])은 팔꿈치가 보드 위 각도 0 방향으로 낮게 뻗어 기둥과
+        # 간섭하기 쉬움 → 항상 비어있는 관측 자세로 복귀
+        self.move_joints(LOOK_POSE, '관측 자세 복귀')
         print(f'놓기 완료: ({px_:.3f}, {py_:.3f})')
 
     def run(self):
@@ -236,10 +355,12 @@ class VisionPick:
 
         self.wait_frame()
 
-        # 이전 데모가 남긴 planning scene 잔여물 제거 (유령 장애물로 인한 플래닝 거부 방지)
+        # 이전 실행 잔여물 제거 (planning scene + Gazebo 실물)
+        # — 유령/실물 장애물 옆에 팔이 멈춰 있으면 플래닝이 거부되므로 정리 후 이동
         self.moveit2.detach_all_collision_objects()
         self.moveit2.remove_collision_object('pillar')
         self.moveit2.remove_collision_object('cube')
+        self.gz_remove('pillar')
         time.sleep(0.5)
 
         # 팔을 시야 밖으로 치운 뒤 검출 (홈 자세는 작업영역을 가림)
@@ -288,7 +409,16 @@ class VisionPick:
         if err > 0.05:
             raise RuntimeError('비전 오차가 5cm 초과 — 캘리브레이션을 다시 하세요')
 
-        self.pick(vx, vy)  # 비전 추정 좌표로 집기 (실제 좌표는 사용하지 않음!)
+        # 장애물 옵션: 기둥을 먼저 무작위 배치하고, 놓기 각도를 기둥을 피해 선택
+        cube_ang = math.atan2(vy, vx)
+        if a.pillar:
+            ox, oy = self.sample_pillar_pos(vx, vy)
+            self.spawn_pillar(ox, oy)
+            place_ang = self.choose_place_angle(cube_ang, math.atan2(oy, ox))
+        else:
+            place_ang = self.choose_place_angle(cube_ang)
+
+        self.pick(vx, vy, place_ang)  # 비전 추정 좌표로 집기 (실제 좌표는 사용 안 함!)
 
 
 def parse_args():
@@ -300,6 +430,10 @@ def parse_args():
     p.add_argument('--grasp-z', type=float, default=0.035, help='집기 손끝 높이 [m]')
     p.add_argument('--grasp-depth', type=float, default=0.015, help='깊게 물기 여유 [m]')
     p.add_argument('--detect-only', action='store_true', help='검출만 하고 팔은 안 움직임')
+    p.add_argument('--pillar', action='store_true',
+                   help='체커보드 위 무작위 위치에 기둥 장애물 추가 (회피 운반)')
+    p.add_argument('--pillar-height', type=float, default=0.15, help='기둥 높이 [m]')
+    p.add_argument('--pillar-width', type=float, default=0.05, help='기둥 폭 [m]')
     return p.parse_args()
 
 

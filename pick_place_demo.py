@@ -261,7 +261,11 @@ class PickPlaceDemo:
         if not self.gripper_client.wait_for_server(timeout_sec=3.0):
             raise RuntimeError('gripper 액션 서버 없음')
         future = self.gripper_client.send_goal_async(goal)
-        rclpy.spin_until_future_complete(self.node, future, timeout_sec=3.0)
+        # 백그라운드 executor와 같은 노드를 이중 spin하면 wait set 경쟁으로
+        # executor가 죽음 → future 완료만 대기 (콜백은 executor가 처리)
+        deadline = time.time() + 3.0
+        while not future.done() and time.time() < deadline:
+            time.sleep(0.05)
         time.sleep(1.0)  # 물리 정착 대기
 
     # ---------- 시나리오 ----------
